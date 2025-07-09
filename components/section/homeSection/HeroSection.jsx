@@ -1,11 +1,9 @@
 import { Icon } from "@iconify/react";
-import Image from "next/image";
-
-import HeroImg from "@/public/img/home/about1.jpg";
+import ImageSlider from "./HeroImageSlider";
 
 export default function HeroSection() {
   return (
-    <div className="relative min-h-screen bg-[#0B1315] overflow-hidden">
+    <div className="relative  overflow-hidden">
       {/* Sophisticated Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 right-20 w-96 h-96 border border-[#B0695E]/10 rotate-45"></div>
@@ -14,12 +12,17 @@ export default function HeroSection() {
       </div>
 
       {/* Hero Content */}
-      <div className="relative z-10  pt-10 container 2xl:px-40 px-4 mx-auto">
-        <div className="grid lg:grid-cols-12 gap-16 items-center min-h-[80vh]">
+      <div className="relative z-10   container 2xl:px-40 px-4 mx-auto py-24">
+        <div className="grid lg:grid-cols-12 gap-16 items-center ">
           {/* Left Content */}
           <div className="lg:col-span-7 space-y-12">
-            <div className="space-y-8">
-              <div className="flex items-center space-x-6">
+            <div className="space-y-8 relative">
+              <div
+                className="w-40 h-16 bg-main rounded-full blur-2xl opacity-20 rotate-12 top-12 absolute left-[5%]"
+                aria-hidden="true"
+              />
+
+              <div className="flex items-center space-x-6 z-[10] relative">
                 <div className="w-16 h-px bg-[#B0695E]"></div>
                 <span className="text-[#B0695E] text-sm tracking-[0.3em] font-light">
                   RedBowl
@@ -27,7 +30,7 @@ export default function HeroSection() {
                 <div className="w-4 h-4 border border-[#B0695E] rotate-45"></div>
               </div>
 
-              <div className="space-y-6">
+              <div className="space-y-6 z-[10] relative">
                 <h1 className="text-6xl text-white  tracking-wide leading-[4.5rem]">
                   Taste the{" "}
                   <span className="relative inline-block">
@@ -94,62 +97,50 @@ export default function HeroSection() {
 
           {/* Right Content - Enhanced Image Section */}
           <div className="lg:col-span-5 relative">
-            <div className="relative">
-              {/* Main Image */}
-              <div className="relative z-10 w-full h-[30rem]">
-                <Image
-                  src={HeroImg}
-                  alt="Master chef at hibachi grill"
-                  width={1000}
-                  height={1000}
-                  className="w-full object-cover h-full"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0B1315]/60 via-transparent to-transparent"></div>
-              </div>
+            <ImageSlider />
 
-              {/* Floating Elements */}
-              <div className="absolute -top-8 -left-8 bg-[#0B1315]/30 backdrop-blur-lg border border-[#B0695E] p-4 z-20">
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-[#B0695E] flex items-center justify-center">
-                    <Icon
-                      icon="material-symbols-light:skillet-cooktop-outline"
-                      className="text-white size-9"
-                    />
+            {/* Floating Elements */}
+            <div className="absolute -top-8 -left-8 bg-[#0B1315]/30 backdrop-blur-lg border border-[#B0695E] p-4 z-20">
+              <div className="flex items-center space-x-4">
+                <div className="w-12 h-12 bg-[#B0695E] flex items-center justify-center">
+                  <Icon
+                    icon="material-symbols-light:skillet-cooktop-outline"
+                    className="text-white size-9"
+                  />
+                </div>
+                <div>
+                  <div className="text-white font-medium mb-1">
+                    Live Performance
                   </div>
-                  <div>
-                    <div className="text-white font-medium mb-1">
-                      Live Performance
-                    </div>
-                    <div className="text-xs text-gray-400 tracking-wide">
-                      TEPPANYAKI SHOW
-                    </div>
+                  <div className="text-xs text-gray-400 tracking-wide">
+                    TEPPANYAKI SHOW
                   </div>
                 </div>
               </div>
-
-              <div className="absolute -bottom-8 -right-8 bg-[#0B1315]/30 backdrop-blur-lg border border-[#B0695E] p-4 z-20">
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-[#B0695E] flex items-center justify-center">
-                    <Icon
-                      icon="fluent-mdl2:chopsticks"
-                      className="text-white size-6"
-                    />
-                  </div>
-                  <div>
-                    <div className="text-white font-medium mb-1">
-                      Premium Sashimi
-                    </div>
-                    <div className="text-xs text-gray-400 tracking-wide">
-                      DAILY FRESH
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Background Accent */}
-              <div className="absolute -inset-4 border border-[#B0695E]/20 -z-10"></div>
-              <div className="absolute -inset-8 border border-[#B0695E]/10 -z-20"></div>
             </div>
+
+            <div className="absolute -bottom-8 -right-8 bg-[#0B1315]/30 backdrop-blur-lg border border-[#B0695E] p-4 z-20">
+              <div className="flex items-center space-x-4">
+                <div className="w-12 h-12 bg-[#B0695E] flex items-center justify-center">
+                  <Icon
+                    icon="fluent-mdl2:chopsticks"
+                    className="text-white size-6"
+                  />
+                </div>
+                <div>
+                  <div className="text-white font-medium mb-1">
+                    Premium Sashimi
+                  </div>
+                  <div className="text-xs text-gray-400 tracking-wide">
+                    DAILY FRESH
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Background Accent */}
+            <div className="absolute -inset-4 border border-[#B0695E]/20 -z-10"></div>
+            <div className="absolute -inset-8 border border-[#B0695E]/10 -z-20"></div>
           </div>
         </div>
       </div>

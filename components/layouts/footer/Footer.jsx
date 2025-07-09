@@ -3,25 +3,26 @@ import Socials from "./Socials";
 import Copyright from "./Copyright";
 import { Icon } from "@iconify/react";
 import { footerLinkItems, footerMenuItem } from "@/utils/DataHelper";
+import Logo from "../navbar/Logo";
 
 export default function Footer() {
   return (
     <div className=" relative border-t border-main/20">
       <div className="container 2xl:px-40 px-4 mx-auto py-12 flex items-start flex-wrap md:flex-nowrap gap-10 md:gap-0 justify-between text-sm">
         <div className="xl:max-w-[26rem] lg:max-w-[20rem] max-w-[16rem] flex flex-col gap-3">
-          <div className="text-xl text-main mb-1">
-            <span className="text-light">Indian</span> Place
+          <div className="text-xl mb-1">
+            <Logo />
           </div>
           <p className="text-gray-300">
-            Indian Place Restaurant bietet authentische indische Küche mit
-            aromatischen Gewürzen, frischen Zutaten und herzlicher
-            Gastfreundschaft.
+            Redbowl offers authentic Japanese hibachi cuisine with fresh
+            ingredients, expert grill techniques, and a welcoming atmosphere
+            full of flavor and entertainment.
           </p>
           <Socials />
         </div>
 
         <div className="flex-col gap-3">
-          <h2 className="text-xl text-main">Speisekarte</h2>
+          <h2 className="text-xl text-main">Menu</h2>
           <div className="flex flex-col gap-3 mt-4">
             {footerMenuItem?.map((data, idx) => (
               <Link
@@ -51,7 +52,7 @@ export default function Footer() {
         </div>
 
         <div className="flex-col gap-3 max-w-[28rem]">
-          <h2 className="text-xl mb-4 text-main">Kontakt</h2>
+          <h2 className="text-xl mb-4 text-main">Contact</h2>
           <div className="space-y-3">
             <p className="text-gray-300 hover:text-light flex items-center gap-3">
               <Icon icon="hugeicons:call-02" className="size-5" />
@@ -59,7 +60,7 @@ export default function Footer() {
             </p>
             <p className="text-gray-300 hover:text-light flex items-center gap-3">
               <Icon icon="ion:mail-outline" className="size-5" />{" "}
-              <span>info@indianpalace.de</span>
+              <span>info@redbowl.de</span>
             </p>
             <p className="text-gray-300 hover:text-light flex items-center gap-3">
               <Icon
