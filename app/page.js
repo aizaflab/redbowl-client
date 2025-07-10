@@ -2,6 +2,7 @@ import SmoothScrollProvider from "@/components/scroll/SmoothScrollProvider";
 import AboutSection from "@/components/section/homeSection/AboutSection";
 import HeroSection from "@/components/section/homeSection/HeroSection";
 import HomeBlog from "@/components/section/homeSection/HomeBlog";
+import HomeFood from "@/components/section/homeSection/HomeFood";
 import SignatureDish from "@/components/section/homeSection/SignatureDish";
 import SpecialOffer from "@/components/section/homeSection/SpecialOffer";
 
@@ -12,6 +13,9 @@ export default function Home() {
         <HeroSection />
         <SignatureDish />
         <AboutSection />
+
+        <HomeFood />
+
         <HomeBlog />
         <SpecialOffer />
       </SmoothScrollProvider>
