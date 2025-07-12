@@ -20,6 +20,41 @@
   --color-dark: #080a1b;
 }
 
+
+@layer utilities {
+  .animate-float {
+    animation: float 4s ease-in-out infinite;
+  }
+
+  .animate-float-reverse {
+    animation: float 3s ease-in-out infinite reverse;
+  }
+
+  .animate-float-slow {
+    animation: float 5s ease-in-out infinite;
+  }
+
+  .animate-float-reverse-slow {
+    animation: float 4.5s ease-in-out infinite reverse;
+  }
+
+  .bg-gradient-radial {
+    background: radial-gradient(circle, var(--tw-gradient-stops));
+  }
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0px) rotate(var(--tw-rotate, 0deg));
+  }
+
+  50% {
+    transform: translateY(-15px) rotate(var(--tw-rotate, 0deg));
+  }
+}
+
 body {
   background: #0B1315;
   color: white;

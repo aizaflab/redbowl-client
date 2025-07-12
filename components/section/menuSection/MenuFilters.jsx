@@ -48,7 +48,7 @@ export function MenuFilters({
   ];
 
   return (
-    <div className="py-6 container mx-auto px-4 2xl:px-40">
+    <div className="py-6 container mx-auto px-4 2xl:px-40 ">
       <div className=" bg-[#152225] border-[#2e474d] p-5 rounded-md mb-5">
         <div className="flex flex-col lg:flex-row gap-4 items-start lg:items-center justify-between ">
           {/* Search */}

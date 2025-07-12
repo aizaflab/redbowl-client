@@ -41,3 +41,32 @@ export const socialData = [
     color: "hover:text-[#1DA1F2]",
   },
 ];
+
+// For Contact
+// Card data array
+export const contactCardData = [
+  {
+    icon: "mdi:phone",
+    title: "Call Us",
+    description: "Our expart team is here to help you from 9am to 5pm.",
+    link: "tel:+19549994191",
+    linkText: "+1-954-999-4191",
+  },
+  {
+    icon: "mdi:email-outline",
+    title: "Email Us",
+    description:
+      "Send us an email and we'll get back to you within a short time.",
+    link: "mailto:ask@retwho.com",
+    linkText: "ask@retwho.com",
+  },
+  {
+    icon: "mdi:map-marker",
+    title: "Visit Us",
+    description:
+      "We are proudly built in USA, serving businesses across all industries.",
+    link: "https://www.google.com/maps/place/3926+Coral+Ridge+Dr,+Coral+Springs,+FL+33065,+USA/data=!4m2!3m1!1s0x88d91002182380d9:0x7d2daae427e2e257?sa=X&ved=1t:242&ictx=111",
+    linkText: "Get directions",
+    isExternal: true,
+  },
+];

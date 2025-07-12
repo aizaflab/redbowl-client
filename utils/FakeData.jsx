@@ -109,4 +109,13 @@ export const mockMenuData = [
     reviewCount: 134,
     category: "Chicken Combo",
   },
+  {
+    id: "shrimp-hibachi",
+    name: "Shrimp Hibachi",
+    price: "$10.99",
+    description: "Fresh shrimp with seasonal vegetables",
+    rating: 4.6,
+    reviewCount: 87,
+    category: "Hibachi",
+  },
 ];
