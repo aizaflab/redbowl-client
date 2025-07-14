@@ -9,16 +9,16 @@ export const menuItems = [
 
 // Footer Menu items
 export const footerMenuItem = [
-  { name: "New Arrivals", url: "/" },
-  { name: "Signature Dish", url: "/" },
-  { name: "Lunch Menu", url: "/" },
-  { name: "Suggested Appetizers", url: "/suggested_appetizers" },
+  { name: "Blog", url: "/blog" },
+  { name: "Location", url: "/career" },
+  { name: "About Us", url: "/resources" },
+  { name: "Reservation", url: "/reservation" },
 ];
 
 // Footer Links items
 export const footerLinkItems = [
-  { name: "Blog", url: "/blog" },
-  { name: "Location", url: "/career" },
+  { name: "Privacy Policy", url: "/privacy-policy" },
+  { name: "Terms of Services", url: "/terms-of-services" },
   { name: "About Us", url: "/resources" },
   { name: "Reservation", url: "/reservation" },
 ];
