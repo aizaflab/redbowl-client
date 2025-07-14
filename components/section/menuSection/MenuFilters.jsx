@@ -1,9 +1,9 @@
 "use client";
 
+import { Icon } from "@iconify/react";
 import { Input } from "@/components/ui/Input";
 import { Select } from "@/components/ui/Select";
-import { mockMenuData } from "@/utils/FakeData";
-import { Icon } from "@iconify/react";
+import { menuData } from "@/utils/DataHelper";
 
 export function MenuFilters({
   filters,
@@ -15,7 +15,7 @@ export function MenuFilters({
 }) {
   const categories =
     (() => {
-      return mockMenuData.map((cat) => ({
+      return menuData.map((cat) => ({
         id: cat.id,
         name: cat.name,
         icon: cat.icon,

@@ -1,5 +1,5 @@
 import React from "react";
-import { mockMenuData } from "@/utils/FakeData";
+import { menuData } from "@/utils/DataHelper";
 import FoodCard from "@/components/cards/FoodCard";
 import SectionHeading from "../commonSection/SectionHeader";
 
@@ -9,7 +9,7 @@ export default function HomeFood() {
       <SectionHeading title="Best Bites" subtitle="Dishes" />
 
       <div className="grid grid-cols-3 gap-5">
-        {mockMenuData.slice(0, 3).map((item) => (
+        {menuData.slice(0, 3).map((item) => (
           <FoodCard key={item.id} item={item} />
         ))}
       </div>

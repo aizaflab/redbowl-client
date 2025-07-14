@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Icon } from "@iconify/react";
-import { mockMenuData } from "@/utils/FakeData";
+import { menuData } from "@/utils/DataHelper";
 import FoodCard from "@/components/cards/FoodCard";
 import { FoodListCard } from "@/components/cards/FoodListCard";
 import MenuHero from "@/components/section/menuSection/MenuHero";
@@ -38,14 +38,14 @@ export default function MenuPage() {
           viewMode={viewMode}
           onViewModeChange={setViewMode}
           categories={"all"}
-          totalResults={mockMenuData.length}
+          totalResults={menuData.length}
           isLoading={false}
         />
 
         {/* Menu Items */}
         <section className="pb-16  ">
           <div className="container mx-auto px-4 2xl:px-40">
-            {mockMenuData.length === 0 ? (
+            {menuData.length === 0 ? (
               <div className="text-center py-16">
                 <Icon
                   icon="mdi:food-off"
@@ -66,7 +66,7 @@ export default function MenuPage() {
                     : "grid md:grid-cols-2 gap-6 "
                 }
               >
-                {mockMenuData.map((item) =>
+                {menuData.map((item) =>
                   viewMode === "grid" ? (
                     <FoodCard
                       key={item.id}
