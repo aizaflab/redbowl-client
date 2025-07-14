@@ -166,7 +166,7 @@ const TermsOfService = () => {
             <h2 class="text-xl  text-main mb-4">Other Site Links</h2>
             <p className="text-stone-300">
               Redbowl may provide links to external websites for user
-              convenience. These links do not imply endorsement, and Flame
+              convenience. These links do not imply endorsement, and Redbowl
               Japanese Hibachi is not responsible for the content or operation
               of these external sites.
             </p>
@@ -238,9 +238,9 @@ const TermsOfService = () => {
               County, New Jersey, unless subject to mandatory arbitration for
               Registered Users. These Terms, along with the Privacy Policy and
               other notices, constitute the entire agreement between you and
-              Flame Japanese Hibachi. If any provision is deemed invalid, the
-              remaining provisions will remain in effect. No waiver of any term
-              will be deemed a further waiver of any other term.
+              Redbowl. If any provision is deemed invalid, the remaining
+              provisions will remain in effect. No waiver of any term will be
+              deemed a further waiver of any other term.
             </p>
           </section>
           <section class="mb-8">

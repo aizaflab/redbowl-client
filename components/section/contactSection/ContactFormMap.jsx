@@ -123,7 +123,7 @@ export default function ContactFormMap() {
               />
               <p className="text-stone-200">Interactive Map</p>
               <p className="text-sm text-stone-400">
-                123 Main Street, City, State
+                6210 Livingston Rd, Oxon Hill
               </p>
             </div>
           </div>

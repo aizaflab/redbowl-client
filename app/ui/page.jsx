@@ -4,7 +4,7 @@ import React from "react";
 
 export default function page() {
   return (
-    <div>
+    <div className="max-w-4xl mx-auto py-10">
       <TextEditor />
     </div>
   );

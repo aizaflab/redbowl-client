@@ -259,10 +259,10 @@ button {
 /* Image toolbar */
 .image-toolbar {
   position: absolute;
-  top: -40px;
+  top: 0px;
   left: 50%;
   transform: translateX(-50%);
-  background: white;
+  background: rgb(45, 45, 45);
   border: 1px solid #e5e7eb;
   border-radius: 6px;
   padding: 4px;
@@ -274,6 +274,8 @@ button {
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
   z-index: 10;
 }
+
+
 
 .image-container:hover .image-toolbar,
 .image-container.resizing .image-toolbar {
@@ -296,11 +298,11 @@ button {
 
 .alignment-button:hover,
 .delete-button:hover {
-  background: #f3f4f6;
+  background: #4a4a4a;
 }
 
 .alignment-button.active {
-  background: #dbeafe;
+  background: #444444;
   color: #3b82f6;
 }
 
@@ -331,14 +333,14 @@ button {
 }
 
 .ProseMirror blockquote {
-  border-left: 4px solid #e5e7eb;
+  border-left: 4px solid #535353;
   padding-left: 16px;
   margin: 16px 0;
   font-style: italic;
 }
 
 .ProseMirror code {
-  background: #f3f4f6;
+  background: #464646;
   padding: 2px 4px;
   border-radius: 4px;
   font-family: "Monaco", "Menlo", "Ubuntu Mono", monospace;
@@ -356,7 +358,7 @@ button {
 
 .ProseMirror hr {
   border: none;
-  border-top: 2px solid #e5e7eb;
+  border-top: 2px solid #454545;
   margin: 24px 0;
 }
 

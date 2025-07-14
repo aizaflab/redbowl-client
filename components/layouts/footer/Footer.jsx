@@ -56,22 +56,22 @@ export default function Footer() {
           <div className="space-y-3">
             <p className="text-gray-300 hover:text-light flex items-center gap-3">
               <Icon icon="hugeicons:call-02" className="size-5" />
-              <span>+49 176 45850022</span>
+              <span>+1 240-493-7034</span>
             </p>
             <p className="text-gray-300 hover:text-light flex items-center gap-3">
               <Icon icon="ion:mail-outline" className="size-5" />{" "}
-              <span>info@redbowl.de</span>
+              <span>ask@redbowlhibachi.com</span>
             </p>
             <p className="text-gray-300 hover:text-light flex items-center gap-3">
               <Icon
                 icon="material-symbols:location-on-outline-rounded"
                 className="size-5"
               />
-              <span>Riemekestraße 8-10, 33102 Paderborn</span>
+              <span>6210 Livingston Rd, Oxon Hill, MD 20745, USA.</span>
             </p>
             <p className="text-gray-300 hover:text-light flex items-center gap-3">
               <Icon icon="lsicon:time-two-outline" className="size-5" />
-              <span>Montag – Samstag, 9:00 – 17:00 Uhr</span>
+              <span>Moday - Saturday 9AM - 5PM</span>
             </p>
           </div>
         </div>

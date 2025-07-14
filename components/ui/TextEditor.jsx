@@ -1132,13 +1132,13 @@ const TextEditor = forwardRef(
         )}
         <div
           className={cn(
-            "border rounded-xl overflow-hidden bg-white dark:bg-transparent border-[#E7E7E7] relative pt-10",
+            "border rounded-xl overflow-hidden bg-white dark:bg-transparent border-[#E7E7E7] relative pt-12",
             error && "border-red-500",
             disabled && "opacity-60 cursor-not-allowed"
           )}
         >
           {/* Toolbar */}
-          <div className="flex flex-wrap items-center gap-0.5 p-1 w-[98.5%] bg-white editorShadow rounded-md absolute top-2 left-2 z-[1000]">
+          <div className="flex flex-wrap items-center gap-0.5 p-1 w-[98.5%] bg-white dark:bg-main/20 editorShadow rounded-md absolute top-2 left-2 z-[1000]">
             {/* Undo/Redo */}
             <div className="flex items-center">
               <button

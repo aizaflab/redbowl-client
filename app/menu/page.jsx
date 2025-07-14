@@ -59,30 +59,41 @@ export default function MenuPage() {
                 </p>
               </div>
             ) : (
-              <div
-                className={
-                  viewMode === "grid"
-                    ? "grid md:grid-cols-2 lg:grid-cols-3 gap-6"
-                    : "grid md:grid-cols-2 gap-6 "
-                }
-              >
-                {menuData.map((item) =>
-                  viewMode === "grid" ? (
-                    <FoodCard
-                      key={item.id}
-                      item={item}
-                      onAddToCart={handleAddToCart}
-                      onToggleFavorite={() => toggleFavorite(item.id)}
-                    />
-                  ) : (
-                    <FoodListCard
-                      key={item.id}
-                      item={item}
-                      onAddToCart={handleAddToCart}
-                      onToggleFavorite={() => toggleFavorite(item.id)}
-                    />
-                  )
-                )}
+              <div>
+                {menuData.map((categoryBlock, index) => (
+                  <div key={index} className="mb-12">
+                    {categoryBlock.mainCategory && (
+                      <h2 className="text-2xl font-medium text-main mb-6">
+                        {categoryBlock.mainCategory}
+                      </h2>
+                    )}
+                    <div
+                      className={
+                        viewMode === "grid"
+                          ? "grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+                          : "grid md:grid-cols-2 gap-6"
+                      }
+                    >
+                      {categoryBlock.menus.map((item) =>
+                        viewMode === "grid" ? (
+                          <FoodCard
+                            key={item.id}
+                            item={item}
+                            onAddToCart={handleAddToCart}
+                            onToggleFavorite={() => toggleFavorite(item.id)}
+                          />
+                        ) : (
+                          <FoodListCard
+                            key={item.id}
+                            item={item}
+                            onAddToCart={handleAddToCart}
+                            onToggleFavorite={() => toggleFavorite(item.id)}
+                          />
+                        )
+                      )}
+                    </div>
+                  </div>
+                ))}
               </div>
             )}
           </div>

@@ -51,26 +51,26 @@ const PrivacyPolicy = () => {
             </h2>
             <p className="text-stone-300">
               This privacy policy pertains to Redbowl’s operations in the United
-              States and governs the personal information obtained by Redbowl
-              (“Flame”) in various contexts. These include when you access or
-              use our websites, or any other services that link to this privacy
-              policy, engage with us through communications, shop via our
-              third-party partners, interact with us on social media, or
-              participate in our programs or events. Please note that Flame
-              restaurants are independently owned and operated franchises, and
-              their handling of personal information is subject to their own
-              privacy policies. If you wish to exercise any rights related to
-              information processed by a Flame restaurant, please visit the
-              respective franchise location to make your requests. We will
-              coordinate with the franchise owner to address your request as
-              required by law. We may provide different or additional privacy
-              notices for certain activities, programs, and offerings.
-              Additionally, “just-in-time” notices may be provided to further
-              explain our privacy practices or offer more choices regarding your
-              personal information. Our websites may contain links to websites
-              or applications operated by third parties. We do not control the
-              privacy practices of these third parties, and we encourage you to
-              review their privacy policies.
+              States and governs the personal information obtained by Redbowl in
+              various contexts. These include when you access or use our
+              websites, or any other services that link to this privacy policy,
+              engage with us through communications, shop via our third-party
+              partners, interact with us on social media, or participate in our
+              programs or events. Please note that Redbowl restaurants are
+              independently owned and operated franchises, and their handling of
+              personal information is subject to their own privacy policies. If
+              you wish to exercise any rights related to information processed
+              by a Redbowl restaurant, please visit the respective franchise
+              location to make your requests. We will coordinate with the
+              franchise owner to address your request as required by law. We may
+              provide different or additional privacy notices for certain
+              activities, programs, and offerings. Additionally, “just-in-time”
+              notices may be provided to further explain our privacy practices
+              or offer more choices regarding your personal information. Our
+              websites may contain links to websites or applications operated by
+              third parties. We do not control the privacy practices of these
+              third parties, and we encourage you to review their privacy
+              policies.
             </p>
           </div>
           <div className="mb-8">
@@ -248,10 +248,10 @@ const PrivacyPolicy = () => {
               personal information, such as accessing, updating, correcting,
               deleting, or withdrawing consent. To exercise these rights, you
               can: Access and Deletion Submit a request via email at
-              privacy@flamejapanesehibachi.com or call Updates and Corrections
-              Update information by logging into your account or contacting us
-              via email or phone. Identity Verification We may need to verify
-              your identity to process certain requests.
+              ask@redbowlhibachi.com or call Updates and Corrections Update
+              information by logging into your account or contacting us via
+              email or phone. Identity Verification We may need to verify your
+              identity to process certain requests.
             </p>
           </div>
           <div className="mb-8">
