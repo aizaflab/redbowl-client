@@ -74,6 +74,8 @@ export const contactCardData = [
 export const menuData = [
   {
     mainCategory: "Chicken Menu",
+    icon: "streamline:chicken-grilled-stream",
+
     menus: [
       {
         id: "2pc-chicken-combo",
@@ -250,6 +252,7 @@ export const menuData = [
 
   {
     mainCategory: "Hibachi Menu",
+    icon: "hugeicons:noodles",
     menus: [
       {
         id: "chicken-hibachi",
@@ -468,7 +471,8 @@ export const menuData = [
   },
 
   {
-    mainCategory: "",
+    mainCategory: "Red Bowl Special",
+    icon: "hugeicons:dish-01",
     menus: [
       {
         id: "chicken-parmesan",

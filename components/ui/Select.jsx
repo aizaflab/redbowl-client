@@ -275,7 +275,7 @@ const Select = forwardRef(
                 left: dropdownStyle.left,
                 width: dropdownStyle.width,
                 position: "absolute",
-                zIndex: 9999,
+                zIndex: 999,
               }}
               className={`rounded-md border border-gray-200 dark:border-primary/20 bg-white dark:bg-[#1A2A2F] shadow-lg ani3 transition-opacity duration-200 ${
                 isVisible
