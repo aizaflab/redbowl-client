@@ -18,24 +18,24 @@ const TermsOfService = () => {
             <Image
               src={legalImg1}
               alt="Privacy Background Graphic"
-              className="absolute top-32 left-[14%] w-28 opacity-50"
+              className="absolute lg:top-32 top-16 xl:left-[14%] left-[10%] xl:w-28 md:w-20 w-12 opacity-50 sm:block hidden"
             />
             <Image
               src={legalImg2}
               alt="Privacy Background Graphic"
-              className="absolute top-20 right-[12%] w-32 opacity-50"
+              className="absolute top-20 xl:right-[12%] right-[8%] xl:w-32 md:w-24 w-16 opacity-50  sm:block hidden"
             />
             <div className="relative">
               <div
                 className="w-40 h-16 bg-main rounded-full blur-2xl opacity-30 rotate-12 top-6 absolute left-[45%]"
                 aria-hidden="true"
               />
-              <h1 className="text-5xl font-medium mb-4 text-white">
+              <h1 className="md:text-5xl text-3xl font-medium mb-4 text-white">
                 Understand Our <br />
                 <span className="text-main">Terms & Conditions</span>
               </h1>
 
-              <p className="opacity-90 text-stone-300">
+              <p className="opacity-90 text-stone-300 md:text-base text-sm">
                 Review the rules, responsibilities, and legal agreements you
                 accept when using our services and platform.
               </p>
@@ -43,7 +43,7 @@ const TermsOfService = () => {
           </div>
         </section>
 
-        <div className="max-w-4xl px-2 mx-auto text-gray-0 py-8">
+        <div className="max-w-4xl px-2 mx-auto text-gray-0 sm:py-8 py-4">
           <section class="mb-8">
             <h2 class="text-xl  text-main mb-4">Introduction</h2>
             <p className="text-stone-300">

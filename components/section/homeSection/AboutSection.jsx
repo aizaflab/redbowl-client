@@ -10,9 +10,9 @@ export default function AboutSection() {
       <SectionHeading title="About Us" subtitle="Special moments" />
 
       <div className="container mx-auto px-4 2xl:px-40 relative">
-        <div className="grid lg:grid-cols-3 gap-8 items-center">
+        <div className="grid md:grid-cols-3 lg:gap-8 gap-4 items-center">
           {/* Left Image */}
-          <div className="bg-[#152225] w-full h-full rounded">
+          <div className="bg-[#152225] w-full lg:h-full h-80 rounded">
             <Image
               src={AboutImg1}
               alt="About Img"
@@ -21,7 +21,7 @@ export default function AboutSection() {
           </div>
 
           {/* Center Content */}
-          <div className="text-center text-white bg-[#152225] w-full h-full rounded p-4 center flex-col relative overflow-hidden">
+          <div className="text-center text-white bg-[#152225] w-full lg:h-full h-80 rounded p-4 center flex-col relative overflow-hidden">
             <Image
               src={levesImg}
               alt="levesImg"
@@ -38,11 +38,11 @@ export default function AboutSection() {
                 Taste perception
               </p>
 
-              <h3 className="text-2xl md:text-4xl font-medium font-serif italic mb-6 leading-tight text-white tracking-widest">
+              <h3 className="text-2xl lg:text-4xl font-medium font-serif italic mb-6 leading-tight text-white tracking-widest">
                 Traditional <br />& Modren
               </h3>
 
-              <p className="text-gray-400/80 font-normal  mb-8">
+              <p className="text-gray-400/80 font-normal lg:text-base text-sm lg:mb-8 mb-0">
                 Sed ut perspiciatis unde omnis iste totam rem aperiam eaque
                 illa. We blend time-hon
               </p>
@@ -54,7 +54,7 @@ export default function AboutSection() {
           </div>
 
           {/* Right Image */}
-          <div className="bg-[#152225] w-full h-full rounded">
+          <div className="bg-[#152225] w-full lg:h-full h-80 rounded">
             <Image
               src={AboutImg2}
               alt="About Img"

@@ -22,7 +22,7 @@ export default function FoodCard({ item }) {
       {/* Content Section */}
       <div className="pt-4 px-1 pb-2 z-[10] relative">
         <div className="mb-3">
-          <h3 className="font-medium text-xl  text-white">{item.name}</h3>
+          <h3 className="font-medium text-xl  mb-1 text-white">{item.name}</h3>
           <p className="text-stone-400 text-sm leading-relaxed line-clamp-2">
             {item.description}
           </p>

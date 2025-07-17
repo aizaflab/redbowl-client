@@ -4,14 +4,14 @@ import { Icon } from "@iconify/react/dist/iconify.js";
 
 export default function CTA() {
   return (
-    <div className="container mx-auto 2xl:px-40 px-2 my-12">
-      <div className="bg-[#152225]/40 sm:p-10 p-5 rounded-2xl flex justify-between relative overflow-hidden">
+    <div className="container mx-auto 2xl:px-40 px-2 sm:my-12">
+      <div className="bg-[#152225]/40 sm:p-10 p-5 sm:rounded-2xl rounded-lg flex justify-between relative overflow-hidden">
         <div className="lg:w-1/2 sm:w-4/5 w-full relative text-center sm:text-left">
           <h2 className="sm:text-4xl text-3xl text-[#1A1A1A] dark:text-white md:pr-20 sm:leading-[3rem] leading-[2.5rem] z-[10] title">
             Where tradition <br /> meets
             <span className="text-main "> taste & flavor.</span>
           </h2>
-          <p className="md:my-7 my-5 sm:pr-12 text-[#6D6D6D] dark:text-gray-300/80 z-[10] sm:text-base text-sm">
+          <p className="md:my-7 my-5 sm:pr-12 text-[#6D6D6D] dark:text-gray-300/80 z-[10] sm:text-base text-sm sm:text-left text-center">
             Red Bowl brings the art of Hibachi and Japanese cuisine to your
             table with freshly grilled meats, vibrant vegetables, and a taste
             experience that’s unforgettable.
@@ -40,30 +40,30 @@ export default function CTA() {
           />
         </div>
 
-        <div className="lg:w-1/2 sm:w-1/5 z-[10] sm:block hidden relative center pl-28">
+        <div className="lg:w-1/2 sm:w-1/5 z-[10] sm:block hidden relative center lg:pl-28">
           <Image
             src={ctaImg}
             alt="cta image"
-            className="h-64 w-fit mx-auto z-[10] animate-float"
+            className="lg:h-64 lg:w-fit sm:w-96 w-64 sm:block hidden   mx-auto z-[10] animate-float  absolute lg:top-5 sm:top-16 top-0 right-5 sm:right-12 md:right-28"
           />
-          <div className="h-[28rem] bg-main/50 w-40 absolute"></div>
+          <div className="h-[28rem] bg-main/50 w-40 absolute sm:block hidden"></div>
 
           <div className="absolute inset-0">
             <Icon
               icon="fluent-mdl2:chopsticks"
-              className="absolute top-20 right-6 text-amber-500 text-4xl opacity-50 animate-float-reverse transform "
+              className="absolute top-20 right-6 text-amber-500 text-4xl opacity-50 animate-float-reverse transform  sm:block hidden"
             />
             <Icon
               icon="streamline-ultimate:seafood-sushi"
-              className="absolute top-16 left-40 text-red-500 text-4xl opacity-60 animate-float-slow"
+              className="absolute top-16 left-40 text-red-500 text-4xl opacity-60 animate-float-slow sm:block hidden"
             />
             <Icon
               icon="carbon:noodle-bowl"
-              className="absolute bottom-2 right-20 text-green-500 text-4xl opacity-50 animate-float-reverse-slow"
+              className="absolute bottom-2 right-20 text-green-500 text-4xl opacity-50 animate-float-reverse-slow sm:block hidden"
             />
             <Icon
               icon="fluent:bowl-salad-20-regular"
-              className="absolute bottom-5 left-28 text-lime-500 size-10 opacity-50 animate-float"
+              className="absolute bottom-5 left-28 text-lime-500 size-10 opacity-50 animate-float sm:block hidden"
             />
           </div>
         </div>

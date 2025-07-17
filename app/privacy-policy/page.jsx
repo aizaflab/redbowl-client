@@ -18,12 +18,12 @@ const PrivacyPolicy = () => {
             <Image
               src={legalImg1}
               alt="Privacy Background Graphic"
-              className="absolute top-32 left-[14%] w-28 opacity-50"
+              className="absolute lg:top-32 top-16 xl:left-[14%] left-[10%] xl:w-28 md:w-20 w-12 opacity-50"
             />
             <Image
               src={legalImg2}
               alt="Privacy Background Graphic"
-              className="absolute top-20 right-[12%] w-32 opacity-50"
+              className="absolute top-20 xl:right-[12%] right-[8%] xl:w-32 md:w-24 w-16 opacity-50"
             />
             <div className="relative">
               <div
@@ -31,12 +31,12 @@ const PrivacyPolicy = () => {
                 aria-hidden="true"
               />
 
-              <h1 className="text-5xl font-medium mb-4 text-white">
+              <h1 className="md:text-5xl text-3xl font-medium mb-4 text-white">
                 Know Your <br />
                 <span className="text-main">Privacy Rights</span>
               </h1>
 
-              <p className="opacity-90 text-stone-300">
+              <p className="opacity-90 text-stone-300 md:text-base text-sm">
                 Learn how we collect, use, and protect your personal information
                 when you use our services.
               </p>
@@ -44,7 +44,7 @@ const PrivacyPolicy = () => {
           </div>
         </section>
 
-        <div className="max-w-4xl px-2 mx-auto text-gray-0 py-8">
+        <div className="lg:max-w-4xl container px-4 lg:px-2 mx-auto text-gray-0 sm:py-8 py-4">
           <div className="mb-8">
             <h2 className="text-xl  text-main mb-4">
               1. Overview of Our Privacy Policy

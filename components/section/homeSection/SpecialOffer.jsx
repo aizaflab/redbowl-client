@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function SpecialOffer() {
   return (
-    <section className="py-20  text-white">
+    <section className="sm:py-20 pt-0  text-white">
       <SectionHeading
         title="Special Offers"
         subtitle="Limited time promotions"

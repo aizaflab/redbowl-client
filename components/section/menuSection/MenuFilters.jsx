@@ -48,44 +48,49 @@ export function MenuFilters({
   ];
 
   return (
-    <div className="py-6 container mx-auto px-4 2xl:px-40 sticky top-10 z-[100]">
-      <div className="bg-[#0F191C] border-[#2e474d] p-5 rounded-md">
-        <div className="flex flex-col lg:flex-row gap-4 items-start lg:items-center justify-between">
+    <div className="py-6 container mx-auto px-4 2xl:px-40 sticky md:top-10 top-[2rem] z-[100] ">
+      <div className="bg-[#0F191C] border-[#2e474d] sm:p-5 p-3 rounded-md">
+        <div className="flex flex-wrap md:flex-nowrap sm:gap-4 gap-2 items-start lg:items-center justify-between">
           {/* 🔍 Search */}
-          <div className="w-full lg:w-64">
-            <Input
-              value={filters.search}
-              onChange={(e) => onFiltersChange({ search: e.target.value })}
-              placeholder="Search menu items..."
-              className="h-10"
-              startIcon={
-                <Icon icon="lets-icons:search" className="size-5 text-main" />
-              }
-            />
+          <div className="flex-1 ">
+            <div className=" md:w-full lg:w-64 order-1">
+              <Input
+                value={filters.search}
+                onChange={(e) => onFiltersChange({ search: e.target.value })}
+                placeholder="Search menu items..."
+                className="h-10"
+                startIcon={
+                  <Icon icon="lets-icons:search" className="size-5 text-main" />
+                }
+              />
+            </div>
           </div>
 
           {/* 🧩 Filters */}
-          <div className="flex flex-col sm:flex-row gap-4 w-full lg:w-auto">
-            {/* 🗂️ Category */}
-            <div className="w-full sm:w-48">
-              <Select
-                options={categoryOptions}
-                value={filters.category}
-                onValueChange={(value) => onFiltersChange({ category: value })}
-                placeholder="Select Category"
-              />
-            </div>
+          <div className="flex flex-col md:flex-row sm:gap-4 gap-2 w-full md:w-auto md:order-2 order-3">
+            <div className="flex  gap-4 flex-1">
+              {/* 🗂️ Category */}
+              <div className="w-full md:w-48">
+                <Select
+                  options={categoryOptions}
+                  value={filters.category}
+                  onValueChange={(value) =>
+                    onFiltersChange({ category: value })
+                  }
+                  placeholder="Select Category"
+                />
+              </div>
 
-            {/* ↕️ Sort */}
-            <div className="w-full sm:w-56">
-              <Select
-                options={sortOptions}
-                value={filters.sortBy}
-                onValueChange={(value) => onFiltersChange({ sortBy: value })}
-                placeholder="Sort By"
-              />
+              {/* ↕️ Sort */}
+              <div className="w-full lg:w-56 md:w-48">
+                <Select
+                  options={sortOptions}
+                  value={filters.sortBy}
+                  onValueChange={(value) => onFiltersChange({ sortBy: value })}
+                  placeholder="Sort By"
+                />
+              </div>
             </div>
-
             {/* 🎛️ Reset */}
             {(filters.search || filters.category !== "all") && (
               <button
@@ -96,32 +101,32 @@ export function MenuFilters({
                 <Icon icon="mdi:filter-off" className="w-4 h-4" />
               </button>
             )}
+          </div>
 
-            {/* 🧭 View Switch */}
-            <div className="flex  rounded-lg p-1 border border-main/50">
-              <button
-                onClick={() => onViewModeChange("grid")}
-                className={`size-8 center rounded-md text-sm ${
-                  viewMode === "grid"
-                    ? "bg-main text-white"
-                    : "text-stone-300 hover:text-white"
-                }`}
-                title="Grid View"
-              >
-                <Icon icon="mdi:grid" className="w-4 h-4" />
-              </button>
-              <button
-                onClick={() => onViewModeChange("list")}
-                className={`size-8 center rounded-md text-sm ${
-                  viewMode === "list"
-                    ? "bg-main text-white"
-                    : "text-stone-300 hover:text-white"
-                }`}
-                title="List View"
-              >
-                <Icon icon="mdi:view-list" className="w-4 h-4" />
-              </button>
-            </div>
+          {/* 🧭 View Switch */}
+          <div className="flex  rounded-lg p-1 border border-main/50 order-2 md:order-3">
+            <button
+              onClick={() => onViewModeChange("grid")}
+              className={`size-8 center rounded-md text-sm ${
+                viewMode === "grid"
+                  ? "bg-main text-white"
+                  : "text-stone-300 hover:text-white"
+              }`}
+              title="Grid View"
+            >
+              <Icon icon="mdi:grid" className="w-4 h-4" />
+            </button>
+            <button
+              onClick={() => onViewModeChange("list")}
+              className={`size-8 center rounded-md text-sm ${
+                viewMode === "list"
+                  ? "bg-main text-white"
+                  : "text-stone-300 hover:text-white"
+              }`}
+              title="List View"
+            >
+              <Icon icon="mdi:view-list" className="w-4 h-4" />
+            </button>
           </div>
         </div>
       </div>

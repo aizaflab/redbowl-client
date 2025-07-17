@@ -9,7 +9,7 @@ export default function SectionHeading({ title, subtitle }) {
         {/* Subtitle Badge */}
         {subtitle && (
           <span
-            className="bg-main/10 text-main w-fit mx-auto px-4 py-1 text-xs rounded-full font-light tracking-wider"
+            className="bg-main/10 text-main w-fit mx-auto px-4 py-1 sm:text-xs text-[11px] rounded-full font-light tracking-wider"
             id="section-subtitle"
           >
             {subtitle}
@@ -19,13 +19,13 @@ export default function SectionHeading({ title, subtitle }) {
         {/* Title with Decorative SVGs */}
         <h2
           id="section-heading"
-          className="md:text-4xl sm:text-3xl text-xl whitespace-nowrap font-medium title flex items-center justify-center gap-4"
+          className="md:text-4xl sm:text-3xl text-xl whitespace-nowrap font-medium title flex items-center justify-center gap-2 sm:gap-4"
         >
           {/* Left SVG */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 100 20"
-            className="w-full sm:w-28 text-main"
+            className="w-16 sm:w-28  text-main"
             fill="currentColor"
             aria-hidden="true"
           >
@@ -61,7 +61,7 @@ export default function SectionHeading({ title, subtitle }) {
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 100 20"
-            className="w-full sm:w-28 text-main"
+            className="w-16 sm:w-28 text-main"
             fill="currentColor"
             aria-hidden="true"
           >
@@ -93,7 +93,7 @@ export default function SectionHeading({ title, subtitle }) {
       </header>
 
       {/* Description Paragraph */}
-      <p className="max-w-2xl mx-auto text-zinc-400 font-light leading-relaxed mt-2">
+      <p className="sm:max-w-2xl mx-auto text-zinc-400 font-light leading-relaxed sm:mt-2 sm:text-base text-sm px-2 sm:px-0">
         Discover the latest additions handpicked just for you — fresh styles,
         top trends, and must-have items just in!
       </p>

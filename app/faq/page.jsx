@@ -168,11 +168,11 @@ export default function FAQPage() {
       <SmoothScrollProvider>
         <FaqHero />
         {/* FAQ Categories */}
-        <section className="py-20">
+        <section className="sm:py-10 py-5">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             {faqCategories.map((category, categoryIndex) => (
-              <div key={categoryIndex} className="">
-                <div className="flex items-center space-x-3 mb-8">
+              <div key={categoryIndex}>
+                <div className="flex items-center space-x-3 sm:mb-8 mb-4">
                   <div className="bg-[#192A30] size-10 center rounded-full">
                     <Icon icon={category.icon} className="size-5 text-white" />
                   </div>
@@ -181,7 +181,7 @@ export default function FAQPage() {
                   </h2>
                 </div>
                 <div className="space-y-4">
-                  <div className="mb-20">
+                  <div className="sm:mb-20 mb-10">
                     <Accordion data={category.faqs} btnClass=" " />
                   </div>
                 </div>

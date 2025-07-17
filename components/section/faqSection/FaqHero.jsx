@@ -9,12 +9,12 @@ export default function FaqHero() {
         <Image
           src={faqImg3}
           alt="Testimonial Background"
-          className="absolute top-32  left-[15%] w-32 opacity-50 "
+          className="absolute lg:top-32 top-12  xl:left-[15%] left-7 xl:w-32 sm:w-28 w-12 opacity-50 "
         />
         <Image
           src={faqImg2}
           alt="Testimonial Background"
-          className="absolute top-20  right-[15%] w-32  opacity-50"
+          className="absolute top-20  xl:right-[15%] right-[5%] sm:w-32  w-12 opacity-50"
         />
         <div className="relative">
           <div
@@ -22,11 +22,11 @@ export default function FaqHero() {
             aria-hidden="true"
           />
 
-          <h1 className="text-5xl font-medium mb-4 text-white">
+          <h1 className="sm:text-5xl text-3xl font-medium mb-4 text-white">
             Everything <br /> <span className="text-main">You Need to </span>{" "}
             Know
           </h1>
-          <p className="opacity-90 text-stone-300">
+          <p className="opacity-90 text-stone-300 sm:tetx-base text-sm">
             Find answers to the most frequently asked questions about our food,
             service, and policies.
           </p>

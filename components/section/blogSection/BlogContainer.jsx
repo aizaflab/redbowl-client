@@ -6,7 +6,7 @@ import Pagination from "@/components/ui/Pagination";
 export default async function BlogContainer() {
   return (
     <div className=" pb-12  z-[100] relative">
-      <div className="flex sm:flex-row flex-col gap-5 sm:items-center sticky top-[4rem] z-[200] justify-between mb-8 bg-[#121e21]  p-5 rounded-md">
+      <div className="flex sm:flex-row flex-col gap-5 sm:items-center sticky sm:top-[4rem] top-[3.6rem] z-[200] justify-between mb-8 bg-[#121e21] p-3 sm:p-5 rounded-md">
         <BlogSearch />
         <CategoryFilter />
       </div>

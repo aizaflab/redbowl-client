@@ -3,7 +3,7 @@ import noiseImg from "@/public/img/elements/noice.png";
 
 export default function FeaturedBlog() {
   return (
-    <div className="h-96 w-full bg-[#1522255e] mb-12 rounded-lg p-3 gap-7 flex relative overflow-hidden">
+    <div className="md:h-96 h-auto w-full bg-[#1522255e] mb-12 rounded-lg p-3 gap-7 flex md:flex-row flex-col relative overflow-hidden">
       <div className="size-32 blur-3xl bg-main opacity-20 absolute -bottom-0 -right-[0]"></div>
       <div
         className="absolute top-0 left-0 w-full h-full pointer-events-none"
@@ -14,13 +14,13 @@ export default function FeaturedBlog() {
           opacity: 0.8,
         }}
       ></div>
-      <div className="h-full w-[55%] dark:bg-[#152225] bg-gray-200 rounded-md relative">
+      <div className="md:h-full sm:h-96 h-72 xl:w-[55%] md:w-[50%]  dark:bg-[#152225] bg-gray-200 rounded-md relative">
         {/* Featured tag */}
         <div className="absolute top-0 left-0 px-4 py-1.5 text-xs bg-primary rounded-full text-white">
           Featured Blog
         </div>
       </div>
-      <div className="h-full w-[45%] py-5 z-[100] relative ">
+      <div className="h-full xl:w-[45%] md:w-[50%] py-5 z-[100] relative ">
         <div className="flex items-center gap-5 text-gray-600 dark:text-gray-400 ">
           <div className="flex items-center gap-1.5 text-sm">
             <Icon icon="svg-spinners:clock" className="size-4 dark:text-main" />

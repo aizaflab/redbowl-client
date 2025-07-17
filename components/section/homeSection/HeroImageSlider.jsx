@@ -75,7 +75,7 @@ export default function ImageSlider() {
   };
 
   return (
-    <div className="relative z-10 w-full h-[30rem] overflow-hidden group">
+    <div className="relative z-10 w-full sm:h-[30rem] h-[20rem] overflow-hidden group">
       {/* Image Container */}
       <div className="relative w-full h-full">
         {images.map((image, index) => (
@@ -145,7 +145,7 @@ export default function ImageSlider() {
       </div>
 
       {/* Image Counter */}
-      <div className="absolute top-6 right-6 bg-[#0B1315]/80 backdrop-blur-sm border border-[#B0695E]/30 px-4 py-2 text-white text-sm z-20">
+      <div className="absolute sm:top-6 top-3 sm:right-6 right-3 bg-[#0B1315]/80 backdrop-blur-sm border border-[#B0695E]/30 px-4 py-2 text-white text-sm z-20">
         <span className="text-[#B0695E] font-medium">
           {String(currentIndex + 1).padStart(2, "0")}
         </span>

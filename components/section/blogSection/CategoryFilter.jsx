@@ -4,8 +4,8 @@ import { Select } from "@/components/ui/Select";
 
 export default function CategoryFilter() {
   return (
-    <div className="flex flex-wrap gap-4">
-      <div className="w-32">
+    <div className="flex flex-1 md:flex-none gap-4">
+      <div className="md:w-32 w-full">
         <Select
           options={[
             { value: "", label: "All" },
@@ -15,7 +15,7 @@ export default function CategoryFilter() {
           fullWidth
         />
       </div>
-      <div className="w-48">
+      <div className="md:w-48 w-full">
         <Select
           options={[
             { value: "", label: "All" },

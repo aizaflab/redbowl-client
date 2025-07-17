@@ -130,7 +130,7 @@ export default function MenuPage() {
                 {filteredMenuData.map((categoryBlock, index) => (
                   <div key={index} className="mb-12">
                     {categoryBlock.mainCategory && (
-                      <div className="text-2xl font-medium text-white mb-6 p-4 bg-[#0F191C] rounded flex items-center gap-5">
+                      <div className="sm:text-2xl text-xl font-medium text-white mb-6 p-4 bg-[#0F191C] rounded flex items-center gap-5">
                         <Icon
                           icon={categoryBlock?.icon}
                           className="size-8 text-main"

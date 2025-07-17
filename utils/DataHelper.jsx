@@ -677,3 +677,37 @@ export const menuData = [
     ],
   },
 ];
+
+export const HomeFoodItems = [
+  {
+    id: "pearl-sugar-waffle",
+    name: "Pearl Sugar Waffle",
+    price: "$1.99",
+    description: "Sweet pearl sugar waffle",
+    rating: 4.0,
+    reviewCount: 25,
+    isPopular: false,
+    category: "fried-chicken",
+  },
+
+  {
+    id: "crispy-chicken",
+    name: "Crispy Chicken Sandwich",
+    price: "$7.99",
+    description: "Crispy Chicken, Pickles, Mayo",
+    rating: 4.6,
+    reviewCount: 76,
+    isPopular: true,
+    category: "sandwich",
+  },
+  {
+    id: "12pc-chicken-bites",
+    name: "12PC Chicken Bites",
+    price: "$10.99",
+    description: "12 pieces of crispy chicken bites",
+    rating: 4.5,
+    reviewCount: 48,
+    isPopular: false,
+    category: "tenders",
+  },
+];

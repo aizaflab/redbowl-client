@@ -2,7 +2,7 @@ import noiseImg from "@/public/img/elements/noice.png";
 
 export default function AboutHero() {
   return (
-    <section className="relative bg-[#0F191C] py-20">
+    <section className="relative bg-[#0F191C] sm:py-20 py-12">
       <div
         className="absolute top-0 left-0 w-full h-full pointer-events-none"
         style={{
@@ -16,7 +16,7 @@ export default function AboutHero() {
         <h1 className="lg:text-5xl sm:text-4xl text-3xl font-bold mb-6">
           About <span className="text-main">RedBowl</span>
         </h1>
-        <p className="text-lg text-gray-400 max-w-3xl mx-auto leading-relaxed">
+        <p className="md:text-lg text-sm text-gray-400 max-w-3xl mx-auto leading-relaxed">
           Where culinary passion meets exceptional dining experience. We've been
           serving authentic flavors and creating memorable moments since our
           beginning.

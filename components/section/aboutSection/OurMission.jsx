@@ -9,7 +9,7 @@ export default function OurMission() {
 
       <div className="container 2xl:px-40 px-4 mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="bg-[#0F191C] rounded-2xl p-8 text-white">
+          <div className="bg-[#0F191C] rounded-2xl sm:p-8 p-4 text-white">
             <Icon icon="mdi:target" className="text-5xl mb-6 text-main" />
             <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
             <p className="text-gray-400 leading-relaxed">
