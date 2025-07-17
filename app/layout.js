@@ -1,5 +1,6 @@
-import { Roboto } from "next/font/google";
 import "./globals.css";
+import { Roboto } from "next/font/google";
+import { Toaster } from "react-hot-toast";
 import Footer from "@/components/layouts/footer/Footer";
 import Navbar from "@/components/layouts/navbar/Navbar";
 import CTA from "@/components/section/commonSection/CTA";
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
         {children}
         <CTA />
         <Footer />
+        <Toaster />
       </body>
     </html>
   );
