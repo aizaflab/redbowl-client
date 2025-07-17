@@ -24,8 +24,8 @@ export default function Navbar() {
                 <Link
                   key={item.name}
                   href={item.path}
-                  className={` hover:text-primary py-3  ${
-                    pathName === item.path ? "text-primary " : "text-gray-200 "
+                  className={` hover:text-main py-3  ${
+                    pathName === item.path ? "text-main " : "text-gray-200 "
                   }`}
                 >
                   {item.name}
@@ -36,7 +36,7 @@ export default function Navbar() {
             {/* mobile menu bar */}
             <button
               onClick={() => setOpenMenu(!openMenu)}
-              className="bg-[#132529] text-primary size-8 rounded cursor-pointer block md:hidden"
+              className="bg-[#132529] text-main size-8 rounded center cursor-pointer block md:hidden"
             >
               <Icon
                 icon={

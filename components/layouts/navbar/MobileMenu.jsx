@@ -1,7 +1,9 @@
 import Link from "next/link";
 import { menuItems } from "@/utils/DataHelper";
+import { usePathname } from "next/navigation";
 
 export default function MobileMenu({ openMenu, setOpenMenu }) {
+  const pathName = usePathname();
   return (
     <>
       <div
@@ -22,7 +24,9 @@ export default function MobileMenu({ openMenu, setOpenMenu }) {
               <Link
                 key={item.name}
                 href={item.path}
-                className="text-gray-200 hover:text-primary px-3 py-2 rounded font-medium text-[15px] w-full"
+                className={`text-gray-200 hover:text-main  ${
+                  pathName === item.path ? "text-main " : "text-gray-200 "
+                }  px-3 py-2 rounded font-medium text-[15px] w-full`}
                 onClick={() => setOpenMenu(false)}
               >
                 {item.name}
@@ -33,7 +37,7 @@ export default function MobileMenu({ openMenu, setOpenMenu }) {
           <div className="absolute bottom-0 w-full">
             <Link
               href="/demo"
-              className="block rounded-full  bg-primary text-center text-white w-full py-2 h-full transition-all duration-300 hover:bg-transparent text-[14px] font-medium"
+              className="block rounded-full  bg-main text-center text-white w-full py-2 h-full transition-all duration-300 hover:bg-transparent text-[14px]"
             >
               Order Now
             </Link>
