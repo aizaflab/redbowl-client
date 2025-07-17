@@ -30,7 +30,7 @@ export default function HeroSection() {
                 <div className="w-4 h-4 border border-[#B0695E] rotate-45"></div>
               </div>
 
-              <div className="space-y-6 z-[10] relative text-center lg:text-left my-4 sm:my-0">
+              <div className="space-y-6 z-[10] relative text-center lg:text-left my-4 sm:my-0 sm:mb-6">
                 <h1 className="2xl:text-6xl sm:text-5xl text-3xl text-white  tracking-wide sm:leading-[4.5rem] leading-[2.5rem]">
                   Taste the{" "}
                   <span className="relative inline-block">
