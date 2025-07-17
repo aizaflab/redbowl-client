@@ -34,19 +34,21 @@ export default function Navbar() {
             </div>
 
             {/* mobile menu bar */}
-            <button
-              onClick={() => setOpenMenu(!openMenu)}
-              className="bg-[#132529] text-main size-8 rounded center cursor-pointer block md:hidden"
-            >
-              <Icon
-                icon={
-                  openMenu
-                    ? "line-md:menu-to-close-transition"
-                    : "line-md:close-to-menu-transition"
-                }
-                className="size-6"
-              />
-            </button>
+            <div className="block md:hidden">
+              <button
+                onClick={() => setOpenMenu(!openMenu)}
+                className="bg-[#132529] text-main size-8 rounded center cursor-pointer "
+              >
+                <Icon
+                  icon={
+                    openMenu
+                      ? "line-md:menu-to-close-transition"
+                      : "line-md:close-to-menu-transition"
+                  }
+                  className="size-6 "
+                />
+              </button>
+            </div>
           </div>
         </div>
       </nav>
