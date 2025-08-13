@@ -1,11 +1,10 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import Image from "next/image";
 import { Icon } from "@iconify/react";
-
-import HeroImg1 from "@/public/img/home/about1.jpg";
-import HeroImg2 from "@/public/img/home/about2.jpg";
+import { useState, useEffect } from "react";
+import HeroImg1 from "@/public/img/elements/banner1.jpg";
+import HeroImg2 from "@/public/img/elements/banner2.jpg";
 
 export default function ImageSlider() {
   const [currentIndex, setCurrentIndex] = useState(0);

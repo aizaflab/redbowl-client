@@ -1,7 +1,8 @@
 import React from "react";
 import { Icon } from "@iconify/react";
-import { signatureDishMenuItems } from "@/utils/FakeData";
+import { signatureDishMenuItems } from "@/utils/DataHelper";
 import SectionHeading from "../commonSection/SectionHeader";
+import Image from "next/image";
 
 export default function SignatureDish() {
   return (
@@ -12,15 +13,22 @@ export default function SignatureDish() {
         {signatureDishMenuItems.map((item, index) => (
           <div
             key={index}
-            className=" bg-[#152225] rounded-xl p-2 flex sm:flex-row flex-col items-center gap-5 relative"
+            className=" bg-[#152225] rounded-xl p-2 flex sm:flex-row flex-col items-center gap-3 relative"
           >
-            <div className=" sm:w-60 w-full aspect-square h-52 bg-red-400/10 rounded-md center ">
-              <Icon
-                icon={item.icon}
-                className="size-12 text-red-300 opacity-80"
-              />
+            <div className="sm:max-w-[14rem] sm:w-[14rem] aspect-square h-52 bg-red-400/10 rounded-md center ">
+              {item.url ? (
+                <Image
+                  src={item.url}
+                  alt={item.name}
+                  className=" h-full w-full object-cover rounded-md "
+                  width={800}
+                  height={500}
+                />
+              ) : (
+                <Icon icon="ep:food" className="size-16 text-main/30" />
+              )}
             </div>
-            <div className="pr-3 px-3 pb-3 ">
+            <div className="pr-3 px-3 pb-3 flex-1 ">
               <h3 className="text-2xl font-medium font-serif italic text-main mb-2">
                 {item.title}
               </h3>

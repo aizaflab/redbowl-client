@@ -1,5 +1,6 @@
 import { Icon } from "@iconify/react";
 import CopyButton from "../section/commonSection/CopyButton";
+import Image from "next/image";
 
 export default function FoodCard({ item }) {
   return (
@@ -11,11 +12,20 @@ export default function FoodCard({ item }) {
 
       {/* Image Section */}
       <div className="relative overflow-hidden">
-        <div className="w-full h-52 bg-[#152225] rounded-md center ">
-          {" "}
-          <Icon icon="ep:food" className="size-16 text-main/30" />
+        <div className="w-full h-[14rem] bg-[#152225] rounded-md center ">
+          {item.url ? (
+            <Image
+              src={item.url}
+              alt={item.name}
+              className=" h-full w-full object-cover rounded-md "
+              width={800}
+              height={500}
+            />
+          ) : (
+            <Icon icon="ep:food" className="size-16 text-main/30" />
+          )}
         </div>
-        <span className="absolute top-3 right-3 text-xs text-main bg-main/10 px-2.5 py-1 rounded-full">
+        <span className="absolute top-3 right-3 text-xs text-white bg-white/10 backdrop-blur-2xl px-2.5 py-1 rounded-full">
           {item?.category}
         </span>
       </div>

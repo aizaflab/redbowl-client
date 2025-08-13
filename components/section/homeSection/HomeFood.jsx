@@ -8,7 +8,7 @@ export default function HomeFood() {
     <div className="container 2xl:px-40 px-4 mx-auto sm:py-16">
       <SectionHeading title="Best Bites" subtitle="Dishes" />
       <div className="grid lg:grid-cols-3 sm:grid-cols-2  gap-5">
-        {HomeFoodItems.slice(0, 3).map((item) => (
+        {HomeFoodItems?.map((item) => (
           <FoodCard key={item.id} item={item} />
         ))}
       </div>

@@ -1,5 +1,5 @@
-import AboutImg1 from "@/public/img/home/about1.jpg";
-import AboutImg2 from "@/public/img/home/about2.jpg";
+import AboutImg1 from "@/public/img/elements/banner1.jpg";
+import AboutImg2 from "@/public/img/elements/banner2.jpg";
 import levesImg from "@/public/img/home/leves.png";
 import SectionHeading from "../commonSection/SectionHeader";
 import Image from "next/image";
@@ -21,7 +21,7 @@ export default function AboutSection() {
           </div>
 
           {/* Center Content */}
-          <div className="text-center text-white bg-[#152225] w-full lg:h-full h-80 rounded p-4 center flex-col relative overflow-hidden">
+          <div className="text-center lg:h-[28rem] text-white bg-[#152225] w-full  h-80 rounded p-4 center flex-col relative overflow-hidden">
             <Image
               src={levesImg}
               alt="levesImg"
