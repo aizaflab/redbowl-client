@@ -87,7 +87,7 @@ export const menuData = [
         reviewCount: 87,
         isPopular: true,
         category: "fried-chicken",
-        url: "/img/food/chicken/chicken-2pc-combo.jpg",
+        url: "/img/food/chicken/chicken-2pc-combo.webp",
       },
       {
         id: "3pc-chicken-combo",
@@ -99,7 +99,7 @@ export const menuData = [
         reviewCount: 92,
         isPopular: false,
         category: "fried-chicken",
-        url: "/img/food/chicken/chicken-3pc-combo.jpg",
+        url: "/img/food/chicken/chicken-3pc-combo.webp",
       },
       {
         id: "4pc-wings-combo",
@@ -123,7 +123,7 @@ export const menuData = [
         reviewCount: 100,
         isPopular: true,
         category: "fried-chicken",
-        url: "/img/food/chicken/chicken-4pc-combo.jpg",
+        url: "/img/food/chicken/chicken-4pc-combo.webp",
       },
       {
         id: "leg",
@@ -134,7 +134,7 @@ export const menuData = [
         reviewCount: 42,
         isPopular: false,
         category: "fried-chicken",
-        url: "/img/food/chicken/chicken-leg.jpg",
+        url: "/img/food/chicken/chicken-leg.webp",
       },
       {
         id: "thigh",
@@ -145,7 +145,7 @@ export const menuData = [
         reviewCount: 45,
         isPopular: false,
         category: "fried-chicken",
-        url: "/img/food/chicken/chicken-thigh.jpg",
+        url: "/img/food/chicken/chicken-thigh.webp",
       },
       {
         id: "wing",
@@ -156,7 +156,7 @@ export const menuData = [
         reviewCount: 30,
         isPopular: false,
         category: "fried-chicken",
-        url: "/img/food/chicken/chicken-wing.jpg",
+        url: "/img/food/chicken/chicken-wing.webp",
       },
       {
         id: "pearl-sugar-waffle",
@@ -167,7 +167,7 @@ export const menuData = [
         reviewCount: 25,
         isPopular: false,
         category: "fried-chicken",
-        url: null,
+        url: "/img/food/chicken/chidken-BelgianWaffle.webp",
       },
 
       // Sandwich
@@ -279,7 +279,7 @@ export const menuData = [
         reviewCount: 124,
         isPopular: true,
         category: "hibachi",
-        url: "/img/food/hebachi/hebachi-ChickenHibachi.jpg",
+        url: "/img/food/hebachi/hebachi-ChickenHibachi.webp",
       },
       {
         id: "beef-hibachi",
@@ -291,7 +291,7 @@ export const menuData = [
         reviewCount: 98,
         isPopular: false,
         category: "hibachi",
-        url: "/img/food/hebachi/hebachi-BeefHabachiBowl.jpg",
+        url: "/img/food/hebachi/hebachi-BeefHabachiBowl.webp",
       },
       {
         id: "shrimp-hibachi",
@@ -302,7 +302,7 @@ export const menuData = [
         reviewCount: 87,
         isPopular: false,
         category: "hibachi",
-        url: null,
+        url: "/img/food/hebachi/hebachi-ShrimpHibachiBowl.webp",
       },
       {
         id: "salmon-hibachi",
@@ -313,7 +313,7 @@ export const menuData = [
         reviewCount: 110,
         isPopular: true,
         category: "hibachi",
-        url: null,
+        url: "/img/food/hebachi/hebachi-SalmonHibachiBowl.webp",
       },
       {
         id: "chicken-shrimp-hibachi",
@@ -335,7 +335,7 @@ export const menuData = [
         reviewCount: 97,
         isPopular: true,
         category: "hibachi",
-        url: "/img/food/hebachi/hebachi-Beef&ShrimpHibachiBowl.jpg",
+        url: "/img/food/hebachi/hebachi-Beef&ShrimpHibachiBowl.webp",
       },
       {
         id: "salmon-shrimp-hibachi",
@@ -346,7 +346,7 @@ export const menuData = [
         reviewCount: 104,
         isPopular: true,
         category: "hibachi",
-        url: "/img/food/hebachi/hebachi-ShrimpAndSalmonHibachiCombo.jpg",
+        url: "/img/food/hebachi/hebachi-ShrimpAndSalmonHibachiCombo.webp",
       },
 
       // Sushi
@@ -430,7 +430,7 @@ export const menuData = [
         reviewCount: 70,
         isPopular: false,
         category: "bento",
-        url: "/img/food/bento/bento-ChickenBentoBox.jpg",
+        url: "/img/food/bento/bento-ChickenBentoBox.webp",
       },
       {
         id: "beef-bento",
@@ -442,7 +442,7 @@ export const menuData = [
         reviewCount: 74,
         isPopular: false,
         category: "bento",
-        url: "/img/food/bento/bento-BeefBentoBox.jpg",
+        url: "/img/food/bento/bento-BeefBentoBox.webp",
       },
       {
         id: "shrimp-bento",
@@ -454,7 +454,7 @@ export const menuData = [
         reviewCount: 72,
         isPopular: false,
         category: "bento",
-        url: "/img/food/bento/bento-ShrimpBentoBox.jpg",
+        url: "/img/food/bento/bento-ShrimpBentoBox.webp",
       },
       {
         id: "salmon-bento",
@@ -466,7 +466,7 @@ export const menuData = [
         reviewCount: 82,
         isPopular: true,
         category: "bento",
-        url: "/img/food/bento/bento-SalmonBentoBox.jpg",
+        url: "/img/food/bento/bento-SalmonBentoBox.webp",
       },
       {
         id: "chicken-shrimp-bento",
@@ -478,7 +478,7 @@ export const menuData = [
         reviewCount: 78,
         isPopular: true,
         category: "bento",
-        url: "/img/food/bento/bento-ChickenShrimpBento.jpg",
+        url: "/img/food/bento/bento-ChickenShrimpBento.webp",
       },
       {
         id: "beef-shrimp-bento",
@@ -490,7 +490,7 @@ export const menuData = [
         reviewCount: 85,
         isPopular: true,
         category: "bento",
-        url: "/img/food/bento/bento-Beef&ShrimpBentoBox.jpg",
+        url: "/img/food/bento/bento-Beef&ShrimpBentoBox.webp",
       },
       {
         id: "salmon-shrimp-bento",
@@ -502,7 +502,7 @@ export const menuData = [
         reviewCount: 88,
         isPopular: true,
         category: "bento",
-        url: "/img/food/bento/bento-hrimp&SalmonBentoBox.jpg",
+        url: "/img/food/bento/bento-hrimp&SalmonBentoBox.webp",
       },
     ],
   },
@@ -521,7 +521,7 @@ export const menuData = [
         reviewCount: 95,
         isPopular: true,
         category: "parmesan-bowl",
-        url: "/img/food/parmisan/parmesanChickenParmesan.jpg",
+        url: "/img/food/parmisan/parmesanChickenParmesan.webp",
       },
       {
         id: "shrimp-parmesan",
@@ -533,7 +533,7 @@ export const menuData = [
         reviewCount: 88,
         isPopular: true,
         category: "parmesan-bowl",
-        url: "/img/food/parmisan/parmisan-ShrimpParmesanBowl.jpg",
+        url: "/img/food/parmisan/parmisan-ShrimpParmesanBowl.webp",
       },
       {
         id: "meatball-parmesan",
@@ -545,7 +545,7 @@ export const menuData = [
         reviewCount: 76,
         isPopular: false,
         category: "parmesan-bowl",
-        url: "/img/food/parmisan/parmesan_MeatBallParmesan.jpg",
+        url: "/img/food/parmisan/parmesan_MeatBallParmesan.webp",
       },
       {
         id: "grilled-salmon-parmesan",
@@ -557,7 +557,7 @@ export const menuData = [
         reviewCount: 84,
         isPopular: true,
         category: "parmesan-bowl",
-        url: "/img/food/parmisan/parmesan-GrilledSalmonParmesanBowl.jpg",
+        url: "/img/food/parmisan/parmesan-GrilledSalmonParmesanBowl.webp",
       },
 
       //  Smoothie
@@ -616,7 +616,7 @@ export const menuData = [
         reviewCount: 61,
         isPopular: false,
         category: "mac-n-cheese",
-        url: "/img/food/mac/mac_MacAndCheese.jpg",
+        url: "/img/food/mac/mac_MacAndCheese.webp",
       },
       {
         id: "mac-chicken",
