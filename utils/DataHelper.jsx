@@ -180,7 +180,7 @@ export const menuData = [
         reviewCount: 76,
         isPopular: true,
         category: "sandwich",
-        url: "/img/food/sandwich/sandwich-CrispyChickenSandwich.jpg",
+        url: "/img/food/sandwich/sandwich-CrispyChickenSandwich.webp",
       },
       {
         id: "honey-hot-chicken",
@@ -192,11 +192,11 @@ export const menuData = [
         reviewCount: 81,
         isPopular: true,
         category: "sandwich",
-        url: "/img/food/sandwich/sandwich-RedHoneyChickenSandwich.jpg",
+        url: "/img/food/sandwich/sandwich-RedHoneyChickenSandwich.webp",
       },
       {
         id: "red-hot-chicken",
-        name: "Red Hot Chicken Sandwich",
+        name: "Red Honey Chicken Sandwich",
         price: "$8.99",
         description:
           "Crispy Chicken, Spicy seasoning, Pickles, Spicy mayo, Chipotle sauce",
@@ -238,28 +238,6 @@ export const menuData = [
         rating: 4.7,
         reviewCount: 65,
         isPopular: true,
-        category: "tenders",
-        url: null,
-      },
-      {
-        id: "6pc-chicken-bites",
-        name: "6PC Chicken Bites",
-        price: "$5.99",
-        description: "6 pieces of crispy chicken bites",
-        rating: 4.3,
-        reviewCount: 40,
-        isPopular: false,
-        category: "tenders",
-        url: null,
-      },
-      {
-        id: "12pc-chicken-bites",
-        name: "12PC Chicken Bites",
-        price: "$10.99",
-        description: "12 pieces of crispy chicken bites",
-        rating: 4.5,
-        reviewCount: 48,
-        isPopular: false,
         category: "tenders",
         url: null,
       },
@@ -359,7 +337,7 @@ export const menuData = [
         reviewCount: 77,
         isPopular: false,
         category: "sushi",
-        url: "/img/food/sushi/sushi-CaliforniaRoll.jpg",
+        url: "/img/food/sushi/sushi-CaliforniaRoll.webp",
       },
       {
         id: "sriracha-crab-shrimp-roll",
@@ -381,7 +359,7 @@ export const menuData = [
         reviewCount: 84,
         isPopular: true,
         category: "sushi",
-        url: "/img/food/sushi/sushi-ShrimpTempuraRoll.jpg",
+        url: "/img/food/sushi/sushi-ShrimpTempuraRoll.webp",
       },
       {
         id: "salmon-roll",
@@ -392,7 +370,7 @@ export const menuData = [
         reviewCount: 79,
         isPopular: false,
         category: "sushi",
-        url: "/img/food/sushi/sushi-SalmonRoll.jpg",
+        url: "/img/food/sushi/sushi-SalmonRoll.webp",
       },
       {
         id: "shrimp-medley-roll",
@@ -404,7 +382,7 @@ export const menuData = [
         reviewCount: 83,
         isPopular: true,
         category: "sushi",
-        url: "/img/food/sushi/sushi-ShrimpMedleyRoll.jpg",
+        url: "/img/food/sushi/sushi-ShrimpMedleyRoll.webp",
       },
       {
         id: "red-bowl-special-roll",
@@ -416,7 +394,7 @@ export const menuData = [
         reviewCount: 99,
         isPopular: true,
         category: "sushi",
-        url: "/img/food/sushi/sushi-RedBowlRiceSpecialRoll.jpg",
+        url: "/img/food/sushi/sushi-RedBowlRiceSpecialRoll.webp",
       },
 
       // Bento Box
@@ -651,7 +629,7 @@ export const menuData = [
         reviewCount: 39,
         isPopular: false,
         category: "sides",
-        url: "/img/food/side/side-WaffleFries.jpg",
+        url: "/img/food/side/side-WaffleFries.webp",
       },
       {
         id: "fried-rice",
@@ -662,7 +640,7 @@ export const menuData = [
         reviewCount: 47,
         isPopular: false,
         category: "sides",
-        url: "/img/food/side/side-FriedRice.jpg",
+        url: "/img/food/side/side-FriedRice.webp",
       },
       {
         id: "white-rice",
@@ -673,7 +651,7 @@ export const menuData = [
         reviewCount: 34,
         isPopular: false,
         category: "sides",
-        url: "/img/food/side/side-whiteRice.jpg",
+        url: "/img/food/side/side-whiteRice.webp",
       },
       {
         id: "noodles",
@@ -684,7 +662,7 @@ export const menuData = [
         reviewCount: 41,
         isPopular: false,
         category: "sides",
-        url: "/img/food/side/side-Noodles.jpg",
+        url: "/img/food/side/side-Noodles.webp",
       },
       {
         id: "grilled-vegetables",
@@ -695,7 +673,7 @@ export const menuData = [
         reviewCount: 43,
         isPopular: false,
         category: "sides",
-        url: "/img/food/side/side-GrilledVegetables.jpg",
+        url: "/img/food/side/side-GrilledVegetables.webp",
       },
       {
         id: "coleslaw",
@@ -706,7 +684,7 @@ export const menuData = [
         reviewCount: 33,
         isPopular: false,
         category: "sides",
-        url: "/img/food/side/side-Coleslaw.jpg",
+        url: "/img/food/side/side-Coleslaw.webp",
       },
       {
         id: "spring-roll",
@@ -745,7 +723,7 @@ export const HomeFoodItems = [
     reviewCount: 98,
     isPopular: false,
     category: "hibachi",
-    url: "/img/food/hebachi/hebachi-BeefHabachiBowl.jpg",
+    url: "/img/food/hebachi/hebachi-BeefHabachiBowl.webp",
   },
 
   {
@@ -758,7 +736,7 @@ export const HomeFoodItems = [
     reviewCount: 72,
     isPopular: false,
     category: "bento",
-    url: "/img/food/bento/bento-ShrimpBentoBox.jpg",
+    url: "/img/food/bento/bento-ShrimpBentoBox.webp",
   },
   {
     id: "3pc-chicken-combo",
@@ -770,7 +748,7 @@ export const HomeFoodItems = [
     reviewCount: 92,
     isPopular: false,
     category: "fried-chicken",
-    url: "/img/food/chicken/chicken-3pc-combo.jpg",
+    url: "/img/food/chicken/chicken-3pc-combo.webp",
   },
 ];
 
@@ -780,26 +758,26 @@ export const signatureDishMenuItems = [
     description:
       "Juicy, tender beef hibachi paired with your choice of two delicious sides.",
     price: "$10.99",
-    url: "/img/food/hebachi/hebachi-BeefHabachiBowl.jpg",
+    url: "/img/food/hebachi/hebachi-BeefHabachiBowl.webp",
   },
   {
     title: "Salmon & Shrimp Hibachi",
     description: "Salmon and shrimp hibachi served with 2 sides.",
     price: "$15.99",
-    url: "/img/food/hebachi/hebachi-ShrimpAndSalmonHibachiCombo.jpg",
+    url: "/img/food/hebachi/hebachi-ShrimpAndSalmonHibachiCombo.webp",
   },
   {
     title: "3PC Chicken Combo",
     description:
       "3 pieces of crispy fried chicken served with noodles in marinara sauce and grated Parmesan cheese.",
     price: "$12.99",
-    url: "/img/food/chicken/chicken-3pc-combo.jpg",
+    url: "/img/food/chicken/chicken-3pc-combo.webp",
   },
 
   {
     title: "Beef & Shrimp Hibachi",
     description: "Beef and shrimp hibachi served with 2 sides.",
     price: "$13.99",
-    url: "/img/food/hebachi/hebachi-Beef&ShrimpHibachiBowl.jpg",
+    url: "/img/food/hebachi/hebachi-Beef&ShrimpHibachiBowl.webp",
   },
 ];
