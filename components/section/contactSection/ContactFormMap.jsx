@@ -22,7 +22,6 @@ export default function ContactFormMap() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission here
     console.log("Form submitted:", formData);
   };
   return (
@@ -37,17 +36,19 @@ export default function ContactFormMap() {
             <div className="grid md:grid-cols-2 gap-4">
               <div>
                 <Input
+                  name="name" // ✅ add name
                   label="Full Name"
                   onChange={handleInputChange}
                   className="h-10"
                   placeholder="Your full name"
-                  required
                   value={formData.name}
+                  required
                   requiredSign={true}
                 />
               </div>
               <div>
                 <Input
+                  name="email" // ✅ add name
                   label="Email Address"
                   onChange={handleInputChange}
                   className="h-10"
@@ -61,6 +62,7 @@ export default function ContactFormMap() {
 
             <div>
               <Input
+                name="phone" // ✅ add name
                 label="Phone Number"
                 onChange={handleInputChange}
                 className="h-10"
@@ -70,8 +72,10 @@ export default function ContactFormMap() {
                 requiredSign={true}
               />
             </div>
+
             <div>
               <Input
+                name="subject" // ✅ add name
                 label="Subject"
                 onChange={handleInputChange}
                 className="h-10"
@@ -85,21 +89,22 @@ export default function ContactFormMap() {
             <div>
               <label
                 htmlFor="message"
-                className="block text-sm font-medium  mb-2"
+                className="block text-sm font-medium mb-2"
               >
                 Message <span className="text-main">*</span>
               </label>
               <textarea
                 id="message"
-                name="message"
+                name="message" // ✅ add name
                 required
                 rows={6}
                 value={formData.message}
                 onChange={handleInputChange}
-                className="w-full px-4 py-3 border border-main rounded-lg focus:outline-none  resize-none"
+                className="w-full px-4 py-3 border border-main rounded-lg focus:outline-none resize-none"
                 placeholder="Tell us how we can help you..."
               />
             </div>
+
             <button
               type="submit"
               className="w-full bg-main text-white py-3 px-6 rounded-lg hover:bg-red-700 transition-colors flex items-center justify-center space-x-2"

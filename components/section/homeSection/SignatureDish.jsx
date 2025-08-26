@@ -16,10 +16,10 @@ export default function SignatureDish() {
             className=" bg-[#152225] rounded-xl p-2 flex sm:flex-row flex-col items-center gap-3 relative"
           >
             <div className="sm:max-w-[14rem] sm:w-[14rem] aspect-square h-52 bg-red-400/10 rounded-md center ">
-              {item.url ? (
+              {item?.url ? (
                 <Image
-                  src={item.url}
-                  alt={item.name}
+                  src={item?.url}
+                  alt={item?.name}
                   className=" h-full w-full object-cover rounded-md "
                   width={800}
                   height={500}

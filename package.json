@@ -12,6 +12,7 @@
     "@iconify/react": "^6.0.0",
     "@studio-freight/lenis": "^1.0.42",
     "clsx": "^2.1.1",
+    "moment": "^2.30.1",
     "next": "15.3.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
