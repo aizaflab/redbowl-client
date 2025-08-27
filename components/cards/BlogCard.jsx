@@ -38,7 +38,7 @@ export default function BlogCard({ blog }) {
       />
       <div className="bg-gray-100 dark:bg-[#121e21]/50 h-48 rounded">
         <Image
-          src={blog?.image || "/placeholder.svg"}
+          src={blog?.banner?.image || "/placeholder.svg"}
           alt={blog?.title}
           width={1000}
           height={1000}

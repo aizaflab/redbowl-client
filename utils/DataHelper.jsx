@@ -10,36 +10,35 @@ export const menuItems = [
 // Footer Menu items
 export const footerMenuItem = [
   { name: "Blog", url: "/blog" },
-  { name: "Location", url: "/career" },
-  { name: "About Us", url: "/resources" },
-  { name: "Reservation", url: "/reservation" },
+  { name: "Menu", url: "/menu" },
+  { name: "About Us", url: "/about" },
+  { name: "Faq", url: "/faq" },
 ];
 
 // Footer Links items
 export const footerLinkItems = [
   { name: "Privacy Policy", url: "/privacy-policy" },
   { name: "Terms of Services", url: "/terms-of-services" },
-  { name: "About Us", url: "/resources" },
-  { name: "Reservation", url: "/reservation" },
+  { name: "Contact", url: "/contact" },
 ];
 
 // Social Data
 export const socialData = [
   {
-    href: "#",
+    href: "https://www.facebook.com/redbowlhibachi",
     icon: "proicons:facebook",
     color: "hover:text-[#769bea]",
   },
   {
-    href: "#",
+    href: "https://www.instagram.com/redbowlhibachi",
     icon: "fe:instagram",
     color: "hover:text-[#e4405f]",
   },
-  {
-    href: "#",
-    icon: "ph:youtube-logo",
-    color: "hover:text-[#1DA1F2]",
-  },
+  // {
+  //   href: "#",
+  //   icon: "ph:youtube-logo",
+  //   color: "hover:text-[#1DA1F2]",
+  // },
 ];
 
 // For Contact

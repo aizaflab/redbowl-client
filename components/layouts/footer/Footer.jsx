@@ -22,7 +22,7 @@ export default function Footer() {
         </div>
 
         <div className="flex-col gap-3">
-          <h2 className="text-xl text-main">Menu</h2>
+          <h2 className="text-xl text-main">Company</h2>
           <div className="flex flex-col gap-3 mt-4">
             {footerMenuItem?.map((data, idx) => (
               <Link

@@ -128,7 +128,7 @@ export default async function BlogDetails({ params }) {
             </div>
 
             <Image
-              src={blog?.image || "/placeholder.svg"}
+              src={blog?.banner?.image || "/placeholder.svg"}
               alt={blog.title || "Blog image"}
               width={1000}
               height={1000}

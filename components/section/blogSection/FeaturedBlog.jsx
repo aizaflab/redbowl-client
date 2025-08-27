@@ -63,7 +63,7 @@ export default async function FeaturedBlog() {
         </div>
 
         <Image
-          src={featuredBlog?.image || "/placeholder.svg"}
+          src={featuredBlog?.banner?.image || "/placeholder.svg"}
           alt={featuredBlog?.title}
           width={1000}
           height={1000}
