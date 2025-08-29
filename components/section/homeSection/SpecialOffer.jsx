@@ -52,7 +52,7 @@ export default function SpecialOffer() {
               icon="mdi:clock"
               className="w-12 h-12 mx-auto mb-4 text-main"
             />
-            <h3 className="text-2xl font-medium mb-2">Happy Hour</h3>
+            <h3 className="text-2xl font-medium mb-2">Order Now</h3>
             <p className="mb-4 text-gray-400">
               Buy 2 hibachi bowls, get 1 free drink. Daily 3-5 PM
             </p>

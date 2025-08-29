@@ -50,46 +50,29 @@ export default function HeroSection() {
                     memories that linger long after.
                   </p>
 
-                  <div className="space-x-8 flex justify-center lg:justify-start">
-                    <div className="text-center flex items-center gap-3">
-                      <div className="sm:text-4xl text-2xl text-white font-extralight ">
-                        25+
-                      </div>
-                      <div className="sm:text-xs text-[10px] text-gray-500 sm:tracking-[0.2em]">
-                        YEARS MASTERY
-                        <div className="w-8 h-px bg-[#B0695E]  mt-2"></div>
-                      </div>
-                    </div>
-                    <div className="text-center flex items-center gap-3">
-                      <div className="sm:text-4xl text-2xl text-white font-extralight ">
-                        8
-                      </div>
-                      <div className="sm:text-xs text-[10px] text-gray-500 sm:tracking-[0.2em]">
-                        MASTER CHEFS
-                        <div className="w-8 h-px bg-[#B0695E] mt-2"></div>
-                      </div>
-                    </div>
-                  </div>
-
                   <div className="flex items-center justify-center lg:justify-start sm:space-x-8 space-x-4 2xl:pt-10 pt-5">
+                    {/* Delivery */}
                     <button className="group flex items-center sm:space-x-4 space-x-2 bg-[#B0695E] text-white sm:px-6 px-3 sm:py-3 py-2 hover:bg-white hover:text-[#B0695E] transition-all duration-300 relative overflow-hidden sm:text-base text-sm">
                       <Icon
-                        icon="material-symbols:local-fire-department"
+                        icon="mdi:truck-delivery"
                         className="sm:text-xl text-lg relative z-10"
                       />
                       <span className="relative z-10 sm:tracking-wide whitespace-nowrap">
-                        BOOK HIBACHI
+                        DELIVERY
                       </span>
                       <div className="absolute inset-0 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
                     </button>
 
-                    <button className="group flex items-center space-x-3 text-gray-400 hover:text-[#B0695E] transition-all duration-300">
-                      <div className="sm:size-12 size-9 border border-gray-600 group-hover:border-[#B0695E] flex items-center justify-center transition-all duration-300">
-                        <Icon icon="mdi:play" className="text-lg" />
-                      </div>
-                      <span className="text-sm sm:tracking-wide">
-                        WATCH STORY
+                    {/* Pickup */}
+                    <button className="group flex items-center sm:space-x-4 space-x-2 bg-[#B0695E] text-white sm:px-6 px-3 sm:py-3 py-2 hover:bg-white hover:text-[#B0695E] transition-all duration-300 relative overflow-hidden sm:text-base text-sm">
+                      <Icon
+                        icon="mdi:bag-checked"
+                        className="sm:text-xl text-lg relative z-10"
+                      />
+                      <span className="relative z-10 sm:tracking-wide whitespace-nowrap">
+                        PICKUP
                       </span>
+                      <div className="absolute inset-0 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
                     </button>
                   </div>
                 </div>
@@ -100,46 +83,6 @@ export default function HeroSection() {
           {/* Right Content - Enhanced Image Section */}
           <div className="lg:col-span-5 relative lg:p-0 sm:p-7 p-3">
             <ImageSlider />
-
-            {/* Floating Elements */}
-            <div className="absolute -top-8 lg:-left-8 left-0 bg-[#0B1315]/30 backdrop-blur-lg border border-[#B0695E] sm:p-4 p-2 z-20">
-              <div className="flex items-center sm:space-x-4 space-x-2">
-                <div className="sm:size-12 size-9 bg-[#B0695E] flex items-center justify-center">
-                  <Icon
-                    icon="material-symbols-light:skillet-cooktop-outline"
-                    className="text-white sm:size-9 size-7"
-                  />
-                </div>
-                <div>
-                  <div className="text-white font-medium mb-1 sm:text-base text-sm">
-                    Live Performance
-                  </div>
-                  <div className="sm:text-xs text-[11px] text-gray-400 tracking-wide">
-                    TEPPANYAKI SHOW
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="absolute -bottom-8 lg:-right-8 right-0 bg-[#0B1315]/30 backdrop-blur-lg border border-[#B0695E] sm:p-4 p-2 z-20">
-              <div className="flex items-center sm:space-x-4 space-x-2">
-                <div className="sm:size-12 size-9 bg-[#B0695E] flex items-center justify-center">
-                  <Icon
-                    icon="fluent-mdl2:chopsticks"
-                    className="text-white sm:size-6 size-5"
-                  />
-                </div>
-                <div>
-                  <div className="text-white font-medium mb-1 sm:text-base text-sm">
-                    Premium Sashimi
-                  </div>
-                  <div className="sm:text-xs text-[11px] text-gray-400 tracking-wide">
-                    DAILY FRESH
-                  </div>
-                </div>
-              </div>
-            </div>
-
             {/* Background Accent */}
             <div className="absolute xl:-inset-4 inset-0 border border-[#B0695E]/20 -z-10"></div>
             <div className="absolute xl:-inset-8 inset-0 border border-[#B0695E]/10 -z-20"></div>

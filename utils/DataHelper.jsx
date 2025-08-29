@@ -110,7 +110,7 @@ export const menuData = [
         reviewCount: 80,
         isPopular: false,
         category: "fried-chicken",
-        url: null,
+        url: "/img/food/chicken/chicken-4pcsChickenCombo.webp",
       },
       {
         id: "4pc-chicken-breast-combo",
@@ -203,7 +203,7 @@ export const menuData = [
         reviewCount: 66,
         isPopular: false,
         category: "sandwich",
-        url: null,
+        url: "/img/food/sandwich/sandwich-RedHoneyChickenSandwich.webp",
       },
 
       //  Tenders
@@ -216,7 +216,7 @@ export const menuData = [
         reviewCount: 50,
         isPopular: false,
         category: "tenders",
-        url: null,
+        url: "/img/food/tenders/RedBowl_ChickenTendersCombo.webp",
       },
       {
         id: "6pc-tender",
@@ -227,7 +227,7 @@ export const menuData = [
         reviewCount: 58,
         isPopular: true,
         category: "tenders",
-        url: null,
+        url: "/img/food/tenders/RedBowl_ChickenTendersCombo.webp",
       },
       {
         id: "12pc-tender",
@@ -238,7 +238,7 @@ export const menuData = [
         reviewCount: 65,
         isPopular: true,
         category: "tenders",
-        url: null,
+        url: "/img/food/tenders/RedBowl_ChickenTendersCombo.webp",
       },
     ],
   },
@@ -301,7 +301,7 @@ export const menuData = [
         reviewCount: 90,
         isPopular: true,
         category: "hibachi",
-        url: null,
+        url: "/img/food/hebachi/hebachi-ShrimpHibachiBowl.webp",
       },
       {
         id: "beef-shrimp-hibachi",
@@ -535,52 +535,6 @@ export const menuData = [
         isPopular: true,
         category: "parmesan-bowl",
         url: "/img/food/parmisan/parmesan-GrilledSalmonParmesanBowl.webp",
-      },
-
-      //  Smoothie
-      {
-        id: "sweet-mango",
-        name: "Sweet Mango",
-        price: "$6.99",
-        description: "Fresh mango smoothie.",
-        rating: 4.5,
-        reviewCount: 45,
-        isPopular: false,
-        category: "smoothie",
-        url: null,
-      },
-      {
-        id: "banana-banana",
-        name: "Banana Banana",
-        price: "$6.99",
-        description: "Double banana smoothie delight.",
-        rating: 4.4,
-        reviewCount: 42,
-        isPopular: false,
-        category: "smoothie",
-        url: null,
-      },
-      {
-        id: "strawberry-banana",
-        name: "Strawberry Banana",
-        price: "$6.99",
-        description: "Classic strawberry banana smoothie.",
-        rating: 4.6,
-        reviewCount: 51,
-        isPopular: true,
-        category: "smoothie",
-        url: null,
-      },
-      {
-        id: "pina-colada",
-        name: "Pina Colada",
-        price: "$7.99",
-        description: "Tropical pineapple and coconut smoothie.",
-        rating: 4.7,
-        reviewCount: 53,
-        isPopular: true,
-        category: "smoothie",
-        url: null,
       },
 
       //  Mac & Cheese
