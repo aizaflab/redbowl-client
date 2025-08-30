@@ -34,11 +34,6 @@ export const socialData = [
     icon: "fe:instagram",
     color: "hover:text-[#e4405f]",
   },
-  // {
-  //   href: "#",
-  //   icon: "ph:youtube-logo",
-  //   color: "hover:text-[#1DA1F2]",
-  // },
 ];
 
 // For Contact
