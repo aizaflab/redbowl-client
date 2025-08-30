@@ -1,8 +1,41 @@
+"use client"
+
 import Image from "next/image";
 import ctaImg from "@/public/img/home/cta.png";
 import { Icon } from "@iconify/react/dist/iconify.js";
+import toast from "react-hot-toast";
+import { useState } from "react";
 
 export default function CTA() {
+  const [isloading,setIsloading]=useState(false)
+  const [formEmail,setFormEmail]=useState("")
+
+  const submitHandel =async()=>{
+    try {
+      setIsloading(true)
+      const res = await fetch("/api/cta", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({email:formEmail}),
+      });
+
+      if (res.ok) {
+        toast.success("Confirmation email sent");
+        setFormEmail("");
+      } else {
+        const data = await res.json().catch(() => ({}));
+        toast
+        .error(data?.error || "Failed to send");
+      }
+      return setIsloading(false)
+    } catch (err) {
+      toast.error("Server error ");
+       setIsloading(false)
+
+    }
+  }
+
+
   return (
     <div className="container mx-auto 2xl:px-40 px-2 sm:my-12">
       <div className="bg-[#152225]/40 sm:p-10 p-5 sm:rounded-2xl rounded-lg flex justify-between relative overflow-hidden">
@@ -19,7 +52,8 @@ export default function CTA() {
 
           <div className="z-[10] sm:space-y-0 sm:space-x-2 flex items-center gap-1 ">
             <input
-              type="text"
+              type="email"
+              onChange={(e)=>setFormEmail(e.target.value)}
               className="bg-transparent flex-1 sm:flex-none p-3 px-5 rounded-full w-[50%] text-sm focus:outline-none border border-main placeholder:text-main"
               placeholder="Enter your email"
             />
@@ -28,8 +62,10 @@ export default function CTA() {
                 icon="streamline:mail-send-email-message"
                 className="sm:hidden size-5"
               />
-              <span className="sm:block hidden whitespace-nowrap">
-                Start Now
+              <span className="sm:block hidden whitespace-nowrap"
+                onClick={()=>submitHandel(formEmail)}
+              >
+              <span>{isloading ? "Submitting..." : "Start Now"}</span>
               </span>
             </button>
           </div>

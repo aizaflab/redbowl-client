@@ -2,8 +2,10 @@
 import { Icon } from "@iconify/react";
 import React, { useState } from "react";
 import { Input } from "@/components/ui/Input";
+import toast from "react-hot-toast";
 
 export default function ContactFormMap() {
+  const [isloading,setIsloading]=useState(false)
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -20,10 +22,38 @@ export default function ContactFormMap() {
     }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form submitted:", formData);
+  const handleSubmit = async (e) => {
+     e.preventDefault();
+    try {
+      setIsloading(true)
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (res.ok) {
+        toast.success("Confirmation email sent");
+        e.target.reset();
+        setFormData(
+          {
+            name: "",
+            email: "",
+            phone: "",
+            subject: "",
+            message: "",
+        });
+
+      } else {
+        const data = await res.json().catch(() => ({}));
+        toast.error(data?.error || "Failed to send");
+      }
+      setIsloading(false)
+    } catch (err) {
+      toast.error("Server error ");
+    }
   };
+
   return (
     <section className="py-12 container mx-auto px-4 2xl:px-40 ">
       <div className="grid md:grid-cols-2 gap-12">
@@ -36,7 +66,7 @@ export default function ContactFormMap() {
             <div className="grid md:grid-cols-2 gap-4">
               <div>
                 <Input
-                  name="name" // ✅ add name
+                  name="name" 
                   label="Full Name"
                   onChange={handleInputChange}
                   className="h-10"
@@ -48,7 +78,7 @@ export default function ContactFormMap() {
               </div>
               <div>
                 <Input
-                  name="email" // ✅ add name
+                  name="email" 
                   label="Email Address"
                   onChange={handleInputChange}
                   className="h-10"
@@ -107,10 +137,11 @@ export default function ContactFormMap() {
 
             <button
               type="submit"
+              disabled={isloading}
               className="w-full bg-main text-white py-3 px-6 rounded-lg hover:bg-red-700 transition-colors flex items-center justify-center space-x-2"
             >
               <Icon icon="mdi:send" className="w-5 h-5" />
-              <span>Send Message</span>
+            <span>{isloading ? "Submitting..." : "Send Message"}</span>
             </button>
           </form>
         </div>
