@@ -36,7 +36,6 @@ export const socialData = [
   },
 ];
 
-// For Contact
 // Card data array
 export const contactCardData = [
   {
@@ -75,8 +74,7 @@ export const menuData = [
         id: "2pc-chicken-combo",
         name: "2PC Chicken Combo",
         price: "$10.99",
-        description:
-          "2 pieces of crispy fried chicken served with noodles in marinara sauce and grated Parmesan cheese",
+        description: "2 pieces of crispy fried chicken served.",
         rating: 4.6,
         reviewCount: 87,
         isPopular: true,
@@ -87,8 +85,7 @@ export const menuData = [
         id: "3pc-chicken-combo",
         name: "3PC Chicken Combo",
         price: "$12.99",
-        description:
-          "3 pieces of crispy fried chicken served with noodles in marinara sauce and grated Parmesan cheese",
+        description: "3 pieces of crispy fried chicken served.",
         rating: 4.7,
         reviewCount: 92,
         isPopular: false,
@@ -96,28 +93,26 @@ export const menuData = [
         url: "/img/food/chicken/chicken-3pc-combo.webp",
       },
       {
-        id: "4pc-wings-combo",
-        name: "4PC Wings Combo",
-        price: "$12.99",
-        description:
-          "4 crispy wings served with noodles in marinara sauce and grated Parmesan cheese",
+        id: "5pc-wings-combo",
+        name: "5PC Wings Combo",
+        price: "$15.99",
+        description: "5 crispy wings served with in marinara sauce.",
         rating: 4.5,
         reviewCount: 80,
         isPopular: false,
         category: "fried-chicken",
-        url: "/img/food/chicken/chicken-4pcsChickenCombo.webp",
+        url: "/img/food/chicken/chicken-4pc-combo.webp",
       },
       {
         id: "4pc-chicken-breast-combo",
-        name: "4PC Chicken Combo (Breast)",
-        price: "$12.99",
-        description:
-          "4 pieces of chicken breast served with noodles in marinara sauce and grated Parmesan cheese",
+        name: "4PC Chicken Combo",
+        price: "$15.99",
+        description: "4 pieces of chicken breast served.",
         rating: 4.8,
         reviewCount: 100,
         isPopular: true,
         category: "fried-chicken",
-        url: "/img/food/chicken/chicken-4pc-combo.webp",
+        url: "/img/food/chicken/chicken-4pcsChickenCombo.webp",
       },
       {
         id: "leg",
@@ -153,6 +148,17 @@ export const menuData = [
         url: "/img/food/chicken/chicken-wing.webp",
       },
       {
+        id: "breast",
+        name: "Breast",
+        price: "$3.49",
+        description: "Single chicken breast",
+        rating: 4.1,
+        reviewCount: 21,
+        isPopular: false,
+        category: "fried-chicken",
+        url: "/img/food/chicken/chicken-Breast.webp",
+      },
+      {
         id: "pearl-sugar-waffle",
         name: "Pearl Sugar Waffle",
         price: "$1.99",
@@ -163,6 +169,17 @@ export const menuData = [
         category: "fried-chicken",
         url: "/img/food/chicken/chidken-BelgianWaffle.webp",
       },
+      // {
+      //   id: "4pcs-chicken-price",
+      //   name: "4pcs chicken price",
+      //   price: "$1.99",
+      //   description: "Sweet pearl sugar waffle",
+      //   rating: 4.1,
+      //   reviewCount: 12,
+      //   isPopular: false,
+      //   category: "fried-chicken",
+      //   url: null,
+      // },
 
       // Sandwich
       {
@@ -234,6 +251,28 @@ export const menuData = [
         isPopular: true,
         category: "tenders",
         url: "/img/food/tenders/RedBowl_ChickenTendersCombo.webp",
+      },
+      {
+        id: "9pc-tender",
+        name: "9PC Tender",
+        price: "$15.99",
+        description: "9 pieces of crispy chicken tenders",
+        rating: 4.6,
+        reviewCount: 60,
+        isPopular: true,
+        category: "tenders",
+        url: null,
+      },
+      {
+        id: "15pc-tender",
+        name: "15PC Tender",
+        price: "$25.99",
+        description: "15 pieces of crispy chicken tenders",
+        rating: 4.8,
+        reviewCount: 72,
+        isPopular: true,
+        category: "tenders",
+        url: null,
       },
     ],
   },
@@ -321,6 +360,41 @@ export const menuData = [
         url: "/img/food/hebachi/hebachi-ShrimpAndSalmonHibachiCombo.webp",
       },
 
+      {
+        id: "chicken-salmon-hibachi",
+        name: "Chicken & Salmon Hibachi",
+        price: "$14.99",
+        description: "Grilled chicken and salmon hibachi served with 2 sides.",
+        rating: 4.8,
+        reviewCount: 85,
+        isPopular: true,
+        category: "hibachi",
+        url: null,
+      },
+      {
+        id: "beef-salmon-hibachi",
+        name: "Beef & Salmon Hibachi",
+        price: "$15.99",
+        description: "Juicy beef and salmon hibachi served with 2 sides.",
+        rating: 4.8,
+        reviewCount: 88,
+        isPopular: true,
+        category: "hibachi",
+        url: null,
+      },
+      {
+        id: "chicken-beef-shrimp-hibachi",
+        name: "Chicken, Beef & Shrimp Hibachi",
+        price: "$15.99",
+        description:
+          "A hearty combo of chicken, beef, and shrimp hibachi served with 2 sides.",
+        rating: 4.9,
+        reviewCount: 120,
+        isPopular: true,
+        category: "hibachi",
+        url: null,
+      },
+
       // Sushi
       {
         id: "california-roll",
@@ -342,7 +416,7 @@ export const menuData = [
         reviewCount: 81,
         isPopular: true,
         category: "sushi",
-        url: null,
+        url: "/img/food/sushi/sushi-CaliforniaRoll.webp",
       },
       {
         id: "shrimp-tempura-roll",
@@ -476,6 +550,18 @@ export const menuData = [
         category: "bento",
         url: "/img/food/bento/bento-hrimp&SalmonBentoBox.webp",
       },
+      {
+        id: "chicken-beef-bento",
+        name: "Chicken & Beef Bento",
+        price: "$14.99",
+        description:
+          "A delicious bento box with grilled chicken and beef, served with rice, veggies, and sauce.",
+        rating: 4.7,
+        reviewCount: 92,
+        isPopular: true,
+        category: "bento",
+        url: null,
+      },
     ],
   },
 
@@ -562,6 +648,29 @@ export const menuData = [
         description: "Mac & Cheese topped with shrimp.",
         rating: 4.7,
         reviewCount: 70,
+        isPopular: true,
+        category: "mac-n-cheese",
+        url: null,
+      },
+      {
+        id: "mac-fries",
+        name: "Mac & Fries",
+        price: "$6.99",
+        description: "Creamy mac and cheese paired with crispy golden fries.",
+        rating: 4.5,
+        reviewCount: 40,
+        isPopular: false,
+        category: "mac-n-cheese",
+        url: null,
+      },
+      {
+        id: "mac-meatballs",
+        name: "Mac & Meatballs",
+        price: "$8.99",
+        description:
+          "Mac and cheese served with savory meatballs and marinara sauce.",
+        rating: 4.7,
+        reviewCount: 55,
         isPopular: true,
         category: "mac-n-cheese",
         url: null,
@@ -653,6 +762,18 @@ export const menuData = [
         rating: 4.6,
         reviewCount: 44,
         isPopular: false,
+        category: "sides",
+        url: null,
+      },
+      {
+        id: "3pc-shrimp-tempura",
+        name: "3PC Shrimp Tempura",
+        price: "$7.99",
+        description:
+          "Crispy golden-fried shrimp tempura served with dipping sauce.",
+        rating: 4.6,
+        reviewCount: 48,
+        isPopular: true,
         category: "sides",
         url: null,
       },

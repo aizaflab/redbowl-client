@@ -1,6 +1,7 @@
 import { Icon } from "@iconify/react";
 import CopyButton from "../section/commonSection/CopyButton";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function FoodCard({ item }) {
   return (
@@ -62,10 +63,14 @@ export default function FoodCard({ item }) {
 
         {/* Action Buttons */}
         <div className="flex gap-4">
-          <button className="flex-1 bg-main/80 text-white h-10 text-sm px-4 rounded center gap-2">
+          <Link
+            target="_blank"
+            href="https://red-bowl-hibachichicken-oxon-hill.cloveronline.com"
+            className="flex-1 bg-main/80 text-white h-10 text-sm px-4 rounded center gap-2"
+          >
             <Icon icon="ep:food" className="w-4 h-4" />
             Order Now
-          </button>
+          </Link>
           <CopyButton />
         </div>
       </div>

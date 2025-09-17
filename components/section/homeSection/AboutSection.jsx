@@ -43,8 +43,8 @@ export default function AboutSection() {
               </h3>
 
               <p className="text-gray-400/80 font-normal lg:text-base text-sm lg:mb-8 mb-0">
-                Sed ut perspiciatis unde omnis iste totam rem aperiam eaque
-                illa. We blend time-hon
+                Taste perception blends traditional and modern flavors, offering
+                a unique culinary journey for every bite.
               </p>
             </div>
 

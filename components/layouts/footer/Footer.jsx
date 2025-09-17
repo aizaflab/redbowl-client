@@ -69,9 +69,13 @@ export default function Footer() {
               />
               <span>6210 Livingston Rd, Oxon Hill, MD 20745, USA.</span>
             </p>
-            <p className="text-gray-300 hover:text-light flex items-center gap-3">
+            <p className="text-gray-300 hover:text-light flex items-start gap-3">
               <Icon icon="lsicon:time-two-outline" className="size-5" />
-              <span>Moday - Saturday 9AM - 5PM</span>
+              <span>
+                Monday-Thursday 11AM-10PM,
+                <br />
+                Friday-Saturday 11AM-2AM, Sunday 11AM-9PM
+              </span>
             </p>
           </div>
         </div>

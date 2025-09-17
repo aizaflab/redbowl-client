@@ -4,6 +4,7 @@ import SectionHeading from "../commonSection/SectionHeader";
 import templeImg1 from "@/public/img/elements/temple1.png";
 import templeImg2 from "@/public/img/elements/temple2.png";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function SpecialOffer() {
   return (
@@ -33,9 +34,13 @@ export default function SpecialOffer() {
             <p className="mb-4 text-gray-400">
               New customers get 20% off their first online order
             </p>
-            <button className="bg-main px-6 py-2 text-sm mt-5 rounded-full hover:bg-[#152225] transition-colors">
+            <Link
+              target="_blank"
+              href="https://red-bowl-hibachichicken-oxon-hill.cloveronline.com"
+              className="bg-main px-6 py-2 text-sm mt-5 rounded-full hover:bg-[#152225] transition-colors"
+            >
               Order Now
-            </button>
+            </Link>
           </div>
 
           <div className="bg-opacity-10 p-8 rounded-lg border  border-main/30 relative overflow-hidden ">
@@ -52,7 +57,15 @@ export default function SpecialOffer() {
               icon="mdi:clock"
               className="w-12 h-12 mx-auto mb-4 text-main"
             />
-            <h3 className="text-2xl font-medium mb-2">Order Now</h3>
+
+            <Link
+              target="_blank"
+              href="https://red-bowl-hibachichicken-oxon-hill.cloveronline.com"
+              className="text-2xl font-medium mb-2"
+            >
+              Order Now
+            </Link>
+
             <p className="mb-4 text-gray-400">
               Buy 2 hibachi bowls, get 1 free drink. Daily 3-5 PM
             </p>

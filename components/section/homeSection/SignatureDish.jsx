@@ -3,6 +3,7 @@ import { Icon } from "@iconify/react";
 import { signatureDishMenuItems } from "@/utils/DataHelper";
 import SectionHeading from "../commonSection/SectionHeader";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function SignatureDish() {
   return (
@@ -38,9 +39,13 @@ export default function SignatureDish() {
                   {item.price}
                 </p>
 
-                <button className="text-[13px] rounded px-4 py-2 bg-main/70">
+                <Link
+                  target="_blank"
+                  href="https://red-bowl-hibachichicken-oxon-hill.cloveronline.com"
+                  className="text-[13px] rounded px-4 py-2 bg-main/70"
+                >
                   Order Now
-                </button>
+                </Link>
               </div>
             </div>
           </div>

@@ -1,7 +1,7 @@
 import Image from "next/image";
-import HeroImg1 from "@/public/img/home/about4.jpg";
-import HeroImg2 from "@/public/img/home/about2.jpg";
-import HeroImg3 from "@/public/img/home/about3.jpg";
+import HeroImg1 from "@/public/img/food/hebachi/hebachi-SalmonHibachiBowl.webp";
+import HeroImg2 from "@/public/img/food/chicken/chicken-leg.webp";
+import HeroImg3 from "@/public/img/food/sandwich/sandwich-CrispyChickenSandwich.webp";
 
 export default function MenuHero() {
   return (
