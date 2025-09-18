@@ -41,7 +41,7 @@ export default function SignatureDish() {
 
                 <Link
                   target="_blank"
-                  href="https://red-bowl-hibachichicken-oxon-hill.cloveronline.com"
+                  href="https://order.online/store/35281937?pickup=true&hideModal=true&redirected=true"
                   className="text-[13px] rounded px-4 py-2 bg-main/70"
                 >
                   Order Now

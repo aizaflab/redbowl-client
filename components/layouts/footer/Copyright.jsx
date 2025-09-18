@@ -6,12 +6,12 @@ const Copyright = () => {
       <p className="text-sm text-main tracking-wider font-normal">
         © 2025 RedBowl. All rights reserved. ⇨ Crafted with care by <br />
         <Link
-          href="https://aizaf.com"
+          href="https://adikaz.com"
           className="text-light underline text-white transition-colors duration-200"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Aizaf Group
+          Adikaz Group
         </Link>
       </p>
     </div>

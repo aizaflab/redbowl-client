@@ -37,7 +37,7 @@ export default function MobileMenu({ openMenu, setOpenMenu }) {
           <div className="absolute bottom-0 w-full">
             <Link
               target="_blank"
-              href="https://red-bowl-hibachichicken-oxon-hill.cloveronline.com"
+              href="https://order.online/store/35281937?pickup=true&hideModal=true&redirected=true"
               className="block rounded-full  bg-main text-center text-white w-full py-2 h-full transition-all duration-300 hover:bg-transparent text-[14px]"
             >
               Order Now

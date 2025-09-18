@@ -73,7 +73,7 @@ export default function HeroSection() {
               <div className="flex items-center justify-center lg:justify-start sm:space-x-8 space-x-4  pt-5">
                 {/* Delivery */}
                 <Link
-                  href="https://red-bowl-hibachichicken-oxon-hill.cloveronline.com"
+                  href="https://order.online/store/35281937?pickup=true&hideModal=true&redirected=true"
                   target="_blank"
                   className="group flex items-center sm:space-x-4 space-x-2 bg-[#B0695E] text-white sm:px-6 px-3 sm:py-3 py-2 hover:bg-white hover:text-[#B0695E] transition-all duration-300 relative overflow-hidden sm:text-base text-sm"
                 >
@@ -90,7 +90,7 @@ export default function HeroSection() {
                 {/* Pickup */}
                 <Link
                   target="_blank"
-                  href="https://red-bowl-hibachichicken-oxon-hill.cloveronline.com"
+                  href="https://order.online/store/35281937?pickup=true&hideModal=true&redirected=true"
                   className="group flex items-center sm:space-x-4 space-x-2 bg-[#B0695E] text-white sm:px-6 px-3 sm:py-3 py-2 hover:bg-white hover:text-[#B0695E] transition-all duration-300 relative overflow-hidden sm:text-base text-sm"
                 >
                   <Icon

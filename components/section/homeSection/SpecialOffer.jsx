@@ -36,7 +36,7 @@ export default function SpecialOffer() {
             </p>
             <Link
               target="_blank"
-              href="https://red-bowl-hibachichicken-oxon-hill.cloveronline.com"
+              href="https://order.online/store/35281937?pickup=true&hideModal=true&redirected=true"
               className="bg-main px-6 py-2 text-sm mt-5 rounded-full hover:bg-[#152225] transition-colors"
             >
               Order Now
@@ -60,7 +60,7 @@ export default function SpecialOffer() {
 
             <Link
               target="_blank"
-              href="https://red-bowl-hibachichicken-oxon-hill.cloveronline.com"
+              href="https://order.online/store/35281937?pickup=true&hideModal=true&redirected=true"
               className="text-2xl font-medium mb-2"
             >
               Order Now

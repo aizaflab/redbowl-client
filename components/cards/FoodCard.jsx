@@ -65,7 +65,7 @@ export default function FoodCard({ item }) {
         <div className="flex gap-4">
           <Link
             target="_blank"
-            href="https://red-bowl-hibachichicken-oxon-hill.cloveronline.com"
+            href="https://order.online/store/35281937?pickup=true&hideModal=true&redirected=true"
             className="flex-1 bg-main/80 text-white h-10 text-sm px-4 rounded center gap-2"
           >
             <Icon icon="ep:food" className="w-4 h-4" />
