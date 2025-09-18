@@ -59,7 +59,7 @@ const Input = forwardRef(
         {label && (
           <label
             htmlFor={inputId}
-            className="text-sm font-medium dark:font-[350] text-gray-700 dark:text-gray-100 cursor-pointer"
+            className="text-sm font-medium  text-gray-100 cursor-pointer"
           >
             {label}
             {requiredSign && <span className="text-red-500 ml-1">*</span>}
@@ -77,7 +77,7 @@ const Input = forwardRef(
             type={type}
             id={inputId}
             className={cn(
-              "flex h-10 w-full rounded-md border border-input dark:border-main/50 dark:font-[350] bg-transparent px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50",
+              "flex h-10 w-full rounded-md border border-main/50  bg-transparent px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50",
               startIcon && "pl-10",
               endIcon && "pr-10",
               error && "border-red-500",
@@ -100,9 +100,7 @@ const Input = forwardRef(
         </div>
 
         {helperText && !error && (
-          <p className="text-xs text-gray-500 dark:text-gray-400 ">
-            {helperText}
-          </p>
+          <p className="text-xs text-gray-400 ">{helperText}</p>
         )}
 
         {error && <p className="text-xs text-red-500">{error}</p>}

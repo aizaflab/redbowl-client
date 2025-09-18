@@ -56,9 +56,7 @@ export default async function BlogDetailLeft({ contentHtml = "", wpm = 200 }) {
               href="#"
               className="flex items-center justify-between py-2 px-3 hover:bg-[#1c2f33] bg-[#152225]  rounded transition-colors"
             >
-              <span className="text-gray-700 dark:text-gray-200">
-                {category?.title}
-              </span>
+              <span className="text-gray-200">{category?.title}</span>
             </a>
           ))}
         </div>

@@ -24,9 +24,7 @@ export default function Pagination({ page, total, limit }) {
         previousLabel={
           <button
             className={`size-8 center bg-transparent border border-main text-sm font-medium rounded-lg  ${
-              page === 1
-                ? "cursor-not-allowed"
-                : "hover:bg-main dark:hover:text-white"
+              page === 1 ? "cursor-not-allowed" : "hover:text-white"
             }`}
             disabled={page === 1}
           >
@@ -36,9 +34,7 @@ export default function Pagination({ page, total, limit }) {
         nextLabel={
           <button
             className={`size-8 center bg-transparent border border-main text-sm font-medium rounded-lg  ${
-              page === totalPages
-                ? "cursor-not-allowed"
-                : "hover:bg-main dark:hover:text-white"
+              page === totalPages ? "cursor-not-allowed" : "hover:text-white"
             }`}
             disabled={page === totalPages}
           >

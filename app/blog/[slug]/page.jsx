@@ -92,19 +92,16 @@ export default async function BlogDetails({ params }) {
   return (
     <div className="container 2xl:px-40 px-4 mx-auto">
       <div className="between  mt-5">
-        <nav className="flex items-center space-x-2 text-sm text-gray-600 dark:text-gray-400  font-medium dark:font-normal">
-          <Link
-            href="#"
-            className="dark:hover:text-sky-400 hover:text-primary "
-          >
+        <nav className="flex items-center space-x-2 text-sm text-gray-400">
+          <Link href="#" className=" hover:text-primary ">
             News
           </Link>
           <Icon icon="mdi:chevron-right" className="w-4 h-4" />
-          <Link href="#" className="dark:hover:text-sky-400 hover:text-primary">
+          <Link href="#" className=" hover:text-primary">
             News Detals
           </Link>
           <Icon icon="mdi:chevron-right" className="w-4 h-4" />
-          <span className="dark:text-white text-primary">Building Modern</span>
+          <span className="text-white ">Building Modern</span>
         </nav>
 
         <div className="items-center gap-3 lg:flex hidden ">
@@ -165,7 +162,7 @@ export default async function BlogDetails({ params }) {
                 </div>
               </div>
 
-              <div className="flex items-center gap-6 text-sm text-gray-500 dark:text-gray-400">
+              <div className="flex items-center gap-6 text-sm text-gray-400">
                 <span>{readingTimeMin} min read</span>
                 <div>/</div>
                 <span>{formatCompact(pickedViews)} views</span>

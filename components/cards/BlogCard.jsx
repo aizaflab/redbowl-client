@@ -36,7 +36,7 @@ export default function BlogCard({ blog }) {
         className="w-40 h-16 bg-main rounded-full blur-2xl opacity-20 rotate-12 bottom-8 absolute right-[5%]"
         aria-hidden="true"
       />
-      <div className="bg-gray-100 dark:bg-[#121e21]/50 h-48 rounded">
+      <div className="bg-[#121e21]/50 h-48 rounded">
         <Image
           src={blog?.banner?.image || "/placeholder.svg"}
           alt={blog?.title}
@@ -54,7 +54,7 @@ export default function BlogCard({ blog }) {
           {blog?.title}
         </Link>
 
-        <p className="text-sm text-gray-500 dark:text-gray-300/80 mt-2 line-clamp-3">
+        <p className="text-sm text-gray-300/80 mt-2 line-clamp-3">
           {typeof window !== "undefined"
             ? extractTextFromHTML(contentText)
             : contentText.replace(/<[^>]*>/g, "")}

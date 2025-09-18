@@ -58,20 +58,18 @@ export default function SpecialOffer() {
               className="w-12 h-12 mx-auto mb-4 text-main"
             />
 
-            <Link
-              target="_blank"
-              href="https://order.online/store/35281937?pickup=true&hideModal=true&redirected=true"
-              className="text-2xl font-medium mb-2"
-            >
-              Order Now
-            </Link>
+            <h3 className="text-2xl font-medium mb-2">Order Now</h3>
 
             <p className="mb-4 text-gray-400">
               Buy 2 hibachi bowls, get 1 free drink. Daily 3-5 PM
             </p>
-            <button className="bg-main text-sm px-6 py-2 rounded-full hover:bg-[#152225] transition-colors">
-              Learn More
-            </button>
+            <Link
+              target="_blank"
+              href="https://order.online/store/35281937?pickup=true&hideModal=true&redirected=true"
+              className="bg-main px-6 py-2 text-sm mt-5 rounded-full hover:bg-[#152225] transition-colors"
+            >
+              Order Now
+            </Link>
           </div>
         </div>
       </div>

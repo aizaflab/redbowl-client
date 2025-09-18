@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import ctaImg from "@/public/img/home/cta.png";
@@ -7,16 +7,16 @@ import toast from "react-hot-toast";
 import { useState } from "react";
 
 export default function CTA() {
-  const [isloading,setIsloading]=useState(false)
-  const [formEmail,setFormEmail]=useState("")
+  const [isloading, setIsloading] = useState(false);
+  const [formEmail, setFormEmail] = useState("");
 
-  const submitHandel =async()=>{
+  const submitHandel = async () => {
     try {
-      setIsloading(true)
+      setIsloading(true);
       const res = await fetch("/api/cta", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({email:formEmail}),
+        body: JSON.stringify({ email: formEmail }),
       });
 
       if (res.ok) {
@@ -24,27 +24,24 @@ export default function CTA() {
         setFormEmail("");
       } else {
         const data = await res.json().catch(() => ({}));
-        toast
-        .error(data?.error || "Failed to send");
+        toast.error(data?.error || "Failed to send");
       }
-      return setIsloading(false)
+      return setIsloading(false);
     } catch (err) {
       toast.error("Server error ");
-       setIsloading(false)
-
+      setIsloading(false);
     }
-  }
-
+  };
 
   return (
     <div className="container mx-auto 2xl:px-40 px-2 sm:my-12">
       <div className="bg-[#152225]/40 sm:p-10 p-5 sm:rounded-2xl rounded-lg flex justify-between relative overflow-hidden">
         <div className="lg:w-1/2 sm:w-4/5 w-full relative text-center sm:text-left">
-          <h2 className="sm:text-4xl text-3xl text-[#1A1A1A] dark:text-white md:pr-20 sm:leading-[3rem] leading-[2.5rem] z-[10] title">
+          <h2 className="sm:text-4xl text-3xl text-white md:pr-20 sm:leading-[3rem] leading-[2.5rem] z-[10] title">
             Where tradition <br /> meets
             <span className="text-main "> taste & flavor.</span>
           </h2>
-          <p className="md:my-7 my-5 sm:pr-12 text-[#6D6D6D] dark:text-gray-300/80 z-[10] sm:text-base text-sm sm:text-left text-center">
+          <p className="md:my-7 my-5 sm:pr-12 text-gray-300/80 z-[10] sm:text-base text-sm sm:text-left text-center">
             Red Bowl brings the art of Hibachi and Japanese cuisine to your
             table with freshly grilled meats, vibrant vegetables, and a taste
             experience that’s unforgettable.
@@ -53,7 +50,7 @@ export default function CTA() {
           <div className="z-[10] sm:space-y-0 sm:space-x-2 flex items-center gap-1 ">
             <input
               type="email"
-              onChange={(e)=>setFormEmail(e.target.value)}
+              onChange={(e) => setFormEmail(e.target.value)}
               className="bg-transparent flex-1 sm:flex-none p-3 px-5 rounded-full w-[50%] text-sm focus:outline-none border border-main placeholder:text-main"
               placeholder="Enter your email"
             />
@@ -62,10 +59,11 @@ export default function CTA() {
                 icon="streamline:mail-send-email-message"
                 className="sm:hidden size-5"
               />
-              <span className="sm:block hidden whitespace-nowrap"
-                onClick={()=>submitHandel(formEmail)}
+              <span
+                className="sm:block hidden whitespace-nowrap"
+                onClick={() => submitHandel(formEmail)}
               >
-              <span>{isloading ? "Submitting..." : "Start Now"}</span>
+                <span>{isloading ? "Submitting..." : "Start Now"}</span>
               </span>
             </button>
           </div>

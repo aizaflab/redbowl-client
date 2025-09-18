@@ -24,7 +24,7 @@ export default function BlogSearch({ initialSearchTerm }) {
         placeholder="Search blogs..."
         value={searchTerm}
         onChange={(e) => handleFieldChange("searchTerm", e.target.value)}
-        className="sm:w-fit w-full px-4 sm:h-11 h-10 pl-9 border text-sm bg-transparent min-w-64 border-gray-300 dark:border-main/50 rounded-md focus:outline-none ani3"
+        className="sm:w-fit w-full px-4 sm:h-11 h-10 pl-9 border text-sm bg-transparent min-w-64 border-main/50 rounded-md focus:outline-none ani3"
       />
 
       <Icon
