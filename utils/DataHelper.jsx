@@ -185,7 +185,7 @@ export const menuData = [
       {
         id: "crispy-chicken",
         name: "Crispy Chicken Sandwich",
-        price: "$7.99",
+        price: "$8.99",
         description: "Crispy Chicken, Pickles, Mayo",
         rating: 4.6,
         reviewCount: 76,
@@ -195,8 +195,8 @@ export const menuData = [
       },
       {
         id: "honey-hot-chicken",
-        name: "Honey Hot Chicken Sandwich",
-        price: "$8.99",
+        name: "Honey Hot Chicken Sandwich(Mild)",
+        price: "$9.99",
         description:
           "Crispy Chicken, House honey hot sauce, Coleslaw, Chipotle sauce",
         rating: 4.7,
@@ -207,8 +207,8 @@ export const menuData = [
       },
       {
         id: "red-hot-chicken",
-        name: "Red Honey Chicken Sandwich",
-        price: "$8.99",
+        name: "Red Honey Chicken Sandwich(Spicy)",
+        price: "$9.99",
         description:
           "Crispy Chicken, Spicy seasoning, Pickles, Spicy mayo, Chipotle sauce",
         rating: 4.5,
@@ -222,7 +222,7 @@ export const menuData = [
       {
         id: "3pc-tender",
         name: "3PC Tender",
-        price: "$5.99",
+        price: "$6.99",
         description: "3 pieces of crispy chicken tenders",
         rating: 4.4,
         reviewCount: 50,
@@ -233,7 +233,7 @@ export const menuData = [
       {
         id: "6pc-tender",
         name: "6PC Tender",
-        price: "$10.99",
+        price: "$12.99",
         description: "6 pieces of crispy chicken tenders",
         rating: 4.6,
         reviewCount: 58,
@@ -244,7 +244,7 @@ export const menuData = [
       {
         id: "12pc-tender",
         name: "12PC Tender",
-        price: "$19.99",
+        price: "$24.99",
         description: "12 pieces of crispy chicken tenders",
         rating: 4.7,
         reviewCount: 65,
@@ -255,7 +255,7 @@ export const menuData = [
       {
         id: "9pc-tender",
         name: "9PC Tender",
-        price: "$15.99",
+        price: "$18.99",
         description: "9 pieces of crispy chicken tenders",
         rating: 4.6,
         reviewCount: 60,
@@ -266,7 +266,7 @@ export const menuData = [
       {
         id: "15pc-tender",
         name: "15PC Tender",
-        price: "$25.99",
+        price: "$30.99",
         description: "15 pieces of crispy chicken tenders",
         rating: 4.8,
         reviewCount: 72,
@@ -295,7 +295,7 @@ export const menuData = [
       {
         id: "beef-hibachi",
         name: "Beef Hibachi",
-        price: "$10.99",
+        price: "$11.99",
         description:
           "Juicy, tender beef hibachi paired with your choice of two delicious sides.",
         rating: 4.7,
@@ -307,7 +307,7 @@ export const menuData = [
       {
         id: "shrimp-hibachi",
         name: "Shrimp Hibachi",
-        price: "$10.99",
+        price: "$11.99",
         description: "Juicy shrimp hibachi served with 2 sides.",
         rating: 4.6,
         reviewCount: 87,
@@ -318,7 +318,7 @@ export const menuData = [
       {
         id: "salmon-hibachi",
         name: "Salmon Hibachi",
-        price: "$12.99",
+        price: "$13.99",
         description: "Grilled salmon hibachi served with 2 sides.",
         rating: 4.9,
         reviewCount: 110,
@@ -329,7 +329,7 @@ export const menuData = [
       {
         id: "chicken-shrimp-hibachi",
         name: "Chicken & Shrimp Hibachi",
-        price: "$12.99",
+        price: "$13.99",
         description: "Chicken and shrimp hibachi served with 2 sides.",
         rating: 4.7,
         reviewCount: 90,
@@ -340,7 +340,7 @@ export const menuData = [
       {
         id: "beef-shrimp-hibachi",
         name: "Beef & Shrimp Hibachi",
-        price: "$13.99",
+        price: "$14.99",
         description: "Beef and shrimp hibachi served with 2 sides.",
         rating: 4.8,
         reviewCount: 97,
@@ -505,7 +505,7 @@ export const menuData = [
       {
         id: "salmon-bento",
         name: "Salmon Bento",
-        price: "$14.99",
+        price: "$13.99",
         description:
           "Salmon with 4pc California roll, 2 spring rolls, 2 dumplings & 2 sides.",
         rating: 4.8,
@@ -529,7 +529,7 @@ export const menuData = [
       {
         id: "beef-shrimp-bento",
         name: "Beef & Shrimp Bento",
-        price: "$15.99",
+        price: "$14.99",
         description:
           "Beef & shrimp with 4pc California roll, 2 spring rolls, 2 dumplings & 2 sides.",
         rating: 4.8,
@@ -541,7 +541,7 @@ export const menuData = [
       {
         id: "salmon-shrimp-bento",
         name: "Salmon & Shrimp Bento",
-        price: "$17.99",
+        price: "$15.99",
         description:
           "Salmon & shrimp with 4pc California roll, 2 spring rolls, 2 dumplings & 2 sides.",
         rating: 4.9,
@@ -644,7 +644,7 @@ export const menuData = [
       {
         id: "mac-shrimp",
         name: "Mac & Shrimp",
-        price: "$8.99",
+        price: "$9.99",
         description: "Mac & Cheese topped with shrimp.",
         rating: 4.7,
         reviewCount: 70,
@@ -680,7 +680,7 @@ export const menuData = [
       {
         id: "waffle-fries",
         name: "Waffle Fries",
-        price: "$4.49",
+        price: "$4.99",
         description: "Crispy waffle-cut fries.",
         rating: 4.3,
         reviewCount: 39,
@@ -691,7 +691,7 @@ export const menuData = [
       {
         id: "fried-rice",
         name: "Fried Rice",
-        price: "$4.49",
+        price: "$4.99",
         description: "Flavorful fried rice.",
         rating: 4.5,
         reviewCount: 47,
@@ -702,7 +702,7 @@ export const menuData = [
       {
         id: "white-rice",
         name: "White Rice",
-        price: "$3.49",
+        price: "$4.99",
         description: "Steamed white rice.",
         rating: 4.1,
         reviewCount: 34,
@@ -713,7 +713,7 @@ export const menuData = [
       {
         id: "noodles",
         name: "Noodles",
-        price: "$4.49",
+        price: "$4.99",
         description: "Savory noodles.",
         rating: 4.4,
         reviewCount: 41,
@@ -724,7 +724,7 @@ export const menuData = [
       {
         id: "grilled-vegetables",
         name: "Grilled Vegetables",
-        price: "$4.49",
+        price: "$4.99",
         description: "Assorted grilled veggies.",
         rating: 4.5,
         reviewCount: 43,
@@ -757,7 +757,7 @@ export const menuData = [
       {
         id: "dumplings",
         name: "5PC Dumplings",
-        price: "$4.49",
+        price: "$3.99",
         description: "5 savory dumplings.",
         rating: 4.6,
         reviewCount: 44,
@@ -768,7 +768,7 @@ export const menuData = [
       {
         id: "3pc-shrimp-tempura",
         name: "3PC Shrimp Tempura",
-        price: "$7.99",
+        price: "$4.99",
         description:
           "Crispy golden-fried shrimp tempura served with dipping sauce.",
         rating: 4.6,
@@ -785,7 +785,7 @@ export const HomeFoodItems = [
   {
     id: "beef-hibachi",
     name: "Beef Hibachi",
-    price: "$10.99",
+    price: "$11.99",
     description:
       "Juicy, tender beef hibachi paired with your choice of two delicious sides.",
     rating: 4.7,
@@ -826,7 +826,7 @@ export const signatureDishMenuItems = [
     title: "Beef Hibachi",
     description:
       "Juicy, tender beef hibachi paired with your choice of two delicious sides.",
-    price: "$10.99",
+    price: "$11.99",
     url: "/img/food/hebachi/hebachi-BeefHabachiBowl.webp",
   },
   {
@@ -846,7 +846,7 @@ export const signatureDishMenuItems = [
   {
     title: "Beef & Shrimp Hibachi",
     description: "Beef and shrimp hibachi served with 2 sides.",
-    price: "$13.99",
+    price: "$14.99",
     url: "/img/food/hebachi/hebachi-Beef&ShrimpHibachiBowl.webp",
   },
 ];

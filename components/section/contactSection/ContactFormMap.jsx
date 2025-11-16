@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/Input";
 import toast from "react-hot-toast";
 
 export default function ContactFormMap() {
-  const [isloading,setIsloading]=useState(false)
+  const [isloading, setIsloading] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -23,9 +23,9 @@ export default function ContactFormMap() {
   };
 
   const handleSubmit = async (e) => {
-     e.preventDefault();
+    e.preventDefault();
     try {
-      setIsloading(true)
+      setIsloading(true);
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -35,20 +35,18 @@ export default function ContactFormMap() {
       if (res.ok) {
         toast.success("Confirmation email sent");
         e.target.reset();
-        setFormData(
-          {
-            name: "",
-            email: "",
-            phone: "",
-            subject: "",
-            message: "",
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          subject: "",
+          message: "",
         });
-
       } else {
         const data = await res.json().catch(() => ({}));
         toast.error(data?.error || "Failed to send");
       }
-      setIsloading(false)
+      setIsloading(false);
     } catch (err) {
       toast.error("Server error ");
     }
@@ -66,7 +64,7 @@ export default function ContactFormMap() {
             <div className="grid md:grid-cols-2 gap-4">
               <div>
                 <Input
-                  name="name" 
+                  name="name"
                   label="Full Name"
                   onChange={handleInputChange}
                   className="h-10"
@@ -78,7 +76,7 @@ export default function ContactFormMap() {
               </div>
               <div>
                 <Input
-                  name="email" 
+                  name="email"
                   label="Email Address"
                   onChange={handleInputChange}
                   className="h-10"
@@ -141,7 +139,7 @@ export default function ContactFormMap() {
               className="w-full bg-main text-white py-3 px-6 rounded-lg hover:bg-red-700 transition-colors flex items-center justify-center space-x-2"
             >
               <Icon icon="mdi:send" className="w-5 h-5" />
-            <span>{isloading ? "Submitting..." : "Send Message"}</span>
+              <span>{isloading ? "Submitting..." : "Send Message"}</span>
             </button>
           </form>
         </div>
